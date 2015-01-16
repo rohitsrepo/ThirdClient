@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/cloudzoom.css" />
+		<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="js/cloudzoom.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<header>
+			<div class="menu-links">
+    			<ul class="toggle-menu">
+      				<li class="toggle">
+        				<span class="toggle-menu-bar"></span>
+        				<span class="toggle-menu-bar"></span>
+        				<span class="toggle-menu-bar"></span>
+      				</li>
+      				<li class="content" style="display: none;">
+        		    	<ul>
+          		  			<li><a href="#" id="split">Content Split</a></li>
+        	  				<li><a href="#" id="zoom">Magnifier</a></li>
+        	  				<li><a href="#" id="full">Full Screen</a></li>
+        	  				<li><a href="#" id="view">View Finder</a></li>
+        				</ul>
+      				</li>
+    			</ul>
+  			</div>
+		</header>
+		<div id="mainp">
+			<img src="bg.jpg" class="cloudzoom" id="img1" width="100%" height="87%" style="position: absolute, z-index: -1" data-cloudzoom = "zoomImage: 'bg.jpg', variableMagnification: true ,zoomPosition: 9"/ >
+			<p id="content"></p>
+		</div>
+		<div>
+		</div>
+		<script src="js/jquery.imageLens.js" type="text/javascript"></script>
+		<script src="js/jquery.fullscreen-min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

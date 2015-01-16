@@ -1,0 +1,528 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+html, body {
+  height: 93%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Varela Round";
+  background: #FFFFFF;
+  background-attachment: fixed;
+}
+.head-top {
+  width: 90%;
+  height: 15%;
+  position: relative;
+ }
+.center {
+  background: rgba(0, 0, 0);
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+}
+.middle {
+  position: absolute;
+  margin-top: -6em;
+  right: 0;
+  left: 0;
+  top: 50%;
+}
+.middle h1 {
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 8em;
+  margin: 0;
+}
+.middle span {
+  line-height: 1em;
+  font-size: 2em;
+}
+
+#pageHr, #pageHrBorder {
+  position: absolute;
+  border-bottom: 25px solid #000000;
+  margin-top: -40px;
+  height: 20px;
+  display: block;
+  right: 0px;
+  left: 0px;
+  top: 100%;
+  cursor: pointer;
+}
+#pageHr .a:before,
+#pageHr .a:after, #pageHrBorder .a:before,
+#pageHrBorder .a:after {
+  border-color: #000000 transparent;
+  border-style: solid;
+  position: absolute;
+  display: block;
+  content: "";
+}
+#pageHr .a:before, #pageHrBorder .a:before {
+  border-width: 0 20px 20px 0;
+  margin-left: 10px;
+  right: 50%;
+}
+#pageHr .a:after, #pageHrBorder .a:after {
+  border-width: 0 0 20px 20px;
+  margin-right: 10px;
+  left: 50%;
+}
+#pageHr .s:before,
+#pageHr .s:after, #pageHrBorder .s:before,
+#pageHrBorder .s:after {
+  background: #000000;
+  position: absolute;
+  display: block;
+  content: "";
+  right: 0;
+  left: 0;
+}
+#pageHr .s:before, #pageHrBorder .s:before {
+  margin-right: 20px;
+  height: 20px;
+  right: 50%;
+}
+#pageHr .s:after, #pageHrBorder .s:after {
+  margin-left: 20px;
+  height: 20px;
+  left: 50%;
+}
+
+#pageHrBorder {
+  border-bottom-color: #F5F7FA;
+  margin-top: -45px;
+}
+#pageHrBorder .a:before,
+#pageHrBorder .a:after {
+  border-color: #F5F7FA transparent;
+}
+#pageHrBorder .a:before {
+  margin-right: -2.5px;
+}
+#pageHrBorder .a:after {
+  margin-left: -2.5px;
+}
+#pageHrBorder .s:before,
+#pageHrBorder .s:after {
+  background: #F5F7FA;
+}
+#pageHrBorder .s:before {
+  margin-right: 17.36842px;
+}
+#pageHrBorder .s:after {
+  margin-left: 17.36842px;
+}
+
+#page {
+  background: #FFFFFF;
+  position: relative;
+  height: 113.45%;
+  top: 100%;
+}
+
+#painting {
+  position: relative;
+  height: 88.1%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.all-social {
+  display: inline;
+  float: right;
+}
+
+.all-tools {
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+#interpret {
+  background: #FFFFFF;
+  position: relative;
+  height: 123.45%;
+  top: 100%;
+}
+
+.inter-heading {
+  position: relative;
+  font-size: 50px;
+  top: 1%;
+}
+/* Login, Sign Up Buttons Start Here */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+#b1, 
+#b2 {
+  padding: 14px 0;
+  border: 2px #000000 solid;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Montserrat", "helvetica neue", helvetica, arial, sans-serif;
+  font-size: .9em;
+  text-transform: uppercase;
+  transition: color 0.4s, background-color 0.4s;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 210px;
+  top: 50%;
+  left: 50%;
+  margin: 0 -105px;
+  width: 210px;
+  pointer-events: none;
+}
+#b1:hover,#b1:focus
+#b2:hover,#b2:focus {
+  transition: color 0.4s, background-color 0.4s; 
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+}
+#b1 {
+  position: absolute;
+  top: 7%;
+  left: 81%;
+  cursor: pointer;
+}
+#b2 {
+  position: absolute;
+  top: 7%;
+  left: 100%;
+  cursor: pointer;
+}
+/* Buttons End Here */
+
+/*Menu Starts Here*/
+
+.menu-links {
+  float: left;  
+  padding-left: 20px;
+}
+
+.toggle-menu {
+  float: left; 
+}
+
+.toggle-menu li {
+  display: block;
+  float: right;
+  list-style-type: none;
+  text-align: right;
+}
+
+.toggle {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+li.toggle:hover span.toggle-menu-bar {
+  background-color: #2288bb;
+}
+
+.toggle-menu-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 auto 3px;
+  transition: background-color 0.2s;
+}
+
+a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #2288bb;
+}
+/*Menu Code Ends Here */
+
+/*Interpret Button Starts Here*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+.button{
+  width:200px;
+  background:#000000;
+  display:block;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.button:hover{
+  background:#2288bb;
+}
+
+#login{
+  top : 7%;
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+#triangle{
+  width:0;
+  border-top:12x solid transparent;
+  border-right:12px solid transparent;
+  border-bottom:12px solid #000000;
+  border-left:12px solid transparent;
+  margin:0 auto;
+}
+
+#login h1{
+  background:#000000;
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+
+form{
+  background:#b4b4b4;
+  padding:6% 4%;
+}
+
+input[type="title"],textarea{
+  width:92%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+  resize: none;
+}
+
+input[type="submit"]{
+  width:100%;
+  background:#000000;
+  border:0;
+  padding:4%;
+  font-family:'Open Sans',sans-serif;
+  font-size:100%;
+  color:#fff;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+input[type="submit"]:hover{
+  background:#2288bb;
+}
+/*Interpret Button Ends Here */
+
+/* Interpretation-Section Starts Here */
+
+/*Interpretations*/
+#messages {
+  position: relative;
+  margin: 50px auto;
+  padding: 0;
+  width: 800px;
+  list-style: none; }
+
+#messages li {
+  float: left;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #c8c7b4; }
+
+#messages li:nth-child(2n) .infos {
+  float: right;
+  margin-left: 20px; }
+
+#messages li:nth-child(2n) .infos a {
+  -webkit-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  -moz-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  left: inherit; }
+
+#messages li:nth-child(2n) .content { border-width: 1px 3px 4px 4px; }
+
+#messages li:nth-child(2n) .content:after,
+#messages li:nth-child(2n) .content:before {
+  right: -9px;
+  left: inherit;
+  -webkit-transform: rotate(41deg);
+  -moz-transform: rotate(41deg);
+  -o-transform: rotate(41deg);
+  transform: rotate(41deg); }
+
+#messages .infos {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  padding: 3px;
+  width: 130px;
+  height: 130px;
+  border: 5px solid #c8c7b4; }
+
+#messages .infos a {
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  border-radius: 17px;
+  -webkit-box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  -moz-box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  background-color: #d5d2a8;
+  color: #fff;
+  text-decoration: none;
+  text-indent: -10000px;
+  font-size: 11px; }
+
+#messages .infos a:hover {
+  padding: 0 10px 0 18px;
+  width: auto;
+  border: none;
+  text-indent: 0;
+  opacity: 0.95; }
+
+#messages img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%; }
+
+ /*Speech Bubble */
+
+.content h3 {
+  font: 23px "Satisfy";
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+.content p {
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  line-height: 1.7em; }
+
+.content p a {
+  text-decoration: none;
+  background-color: #f7f3c5;
+  border-bottom: solid 1px #cfcebe;
+  color: #834202;
+  padding: 1px 4px; }
+
+
+.content b {
+  display: block;
+  color: #75280c;
+  font: italic normal 17px Georgia; }
+
+/* Interpretation-Section Ends Here */
+
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+
+  }
+
+  /** An element that fades in */
+  .scene_element--fadein {
+    animation-name: fadeIn;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
+
+  /** An element that fades in and slides from the right */
+  .scene_element--fadeinright {
+    animation-name: fadeInRight;
+  }
+
+  &.is-exiting {
+      .scene_element {
+        animation-direction: alternate-reverse;
+      }
+  }
+}

@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+
+
+/* Menu Code Starts Here */
+header {
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.menu-links {
+  float: right;  
+  padding-right: 20px;
+}
+
+.toggle-menu {
+  float: right; 
+}
+
+.toggle-menu li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	text-align: left;
+}
+
+.toggle {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+li.toggle:hover span.toggle-menu-bar {
+  background-color: #009933;
+}
+
+.toggle-menu-bar {
+	display: block;
+	width: 25px;
+	height: 4px;
+	background-color: black;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 auto 3px;
+  transition: background-color 0.2s;
+}
+
+a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #009933;
+}
+/* Menu Code Ends Here */
+#image1 {
+  position: absolute;
+  left:0;
+  width:200px;
+  width: 100%;
+}
+
+#content {
+  position: absolute;
+  width: 500px;
+  height: 568px;
+  top: 60px;
+  right: 0;
+
+}
