@@ -212,12 +212,26 @@ img#painting {
   position: relative;
   height: 123.45%;
 }
+
+#messages {
+  float: left;
+}
+
 .inter-heading {
   position: relative;
   font-size: 50px;
   top: 1%;
 }
-/* Login, Sign Up Buttons Start Here */
+
+.about_art {
+  background-color: red;
+  display: inline;
+  float: right;
+  width: 30%;
+  height: 100%;
+  margin-right: 5px;
+}
+/* Login, Sign Up Buttons Start Here 
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 #b1, 
@@ -245,9 +259,7 @@ img#painting {
   user-select: none;
   width: 210px;
   top: 50%;
-  left: 50%;
-  margin: 0 -105px;
-  width: 210px;
+  margin-right: 50px;
   pointer-events: none;
 }
 #b1:hover,#b1:focus
@@ -269,7 +281,7 @@ img#painting {
   left: 100%;
   cursor: pointer;
 }
-/* Buttons End Here */
+ Buttons End Here */
 
 /*Menu Starts Here*/
 
@@ -417,7 +429,8 @@ input[type="submit"]:hover{
   margin: 50px auto;
   padding: 0;
   width: 800px;
-  list-style: none; }
+  list-style: none; 
+}
 
 #messages li {
   float: left;
