@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
 
   $("#pageHr,#pageHrBorder,.middle").click(function() {
-        $.scrollTo($("#page"), { duration: 1500});
+        $.scrollTo($(".pagetop"), { duration: 1500});
     });
 
     var flag=0;
@@ -25,6 +25,7 @@ $(document).ready(function() {
 
   $("#painting").click(function() {
         $.scrollTo($("#interpret"), { duration: 1500});
+        $('#interpret').css('margin-left','30px');
     });
 
   $('#login').hide();
