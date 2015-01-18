@@ -224,12 +224,17 @@ img#painting {
 }
 
 .about_art {
-  background-color: red;
   display: inline;
   float: right;
   width: 30%;
   height: 100%;
   margin-right: 5px;
+  border: 2px solid #000000;
+}
+
+.about_art p {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 /* Login, Sign Up Buttons Start Here 
 
