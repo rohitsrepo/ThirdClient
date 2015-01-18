@@ -11,7 +11,7 @@ body {
   background-attachment: fixed;
 }
 .head-top {
-  width: 90%;
+  width: 100%;
   height: 10%;
   margin-top: 0px;
  }
@@ -182,7 +182,7 @@ body {
 .inter_btn {
   position: relative;
   margin: 0 auto;
-  width: 23.25%;  
+  width: 16%;  
   display: block;
   top: 15px;
 }
@@ -191,6 +191,7 @@ img#painting {
   width: 700px;
   height: auto;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .social_icons {
@@ -236,8 +237,29 @@ img#painting {
   margin-right: 5px;
   margin-left: 5px;
 }
-/* Login, Sign Up Buttons Start Here 
-
+/* Login, Sign Up Buttons Start Here */
+#b1 {
+  position: relative;
+  float: right;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 15px;
+  color: black;
+}
+#b1 a{
+  text-decoration: none;
+}
+#b1 #su:hover{
+  text-decoration color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#b1 #li:hover{
+  text-decoration color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 #b1, 
 #b2 {
@@ -289,7 +311,7 @@ img#painting {
  Buttons End Here */
 
 /*Menu Starts Here*/
-
+/*
 .menu-links {
   float: left;  
   padding-left: 20px;
@@ -338,7 +360,7 @@ a {
 a:hover {
   color: #2288bb;
 }
-/*Menu Code Ends Here */
+Menu Code Ends Here */
 
 /*Interpret Button Starts Here*/
 
@@ -537,3 +559,6 @@ input[type="submit"]:hover{
   font: italic normal 17px Georgia; }
 
 /* Interpretation-Section Ends Here */
+
+/*Curtain Menu*/
+
