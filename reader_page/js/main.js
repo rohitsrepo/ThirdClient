@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	 $(".middle").click(function() {
-        $.scrollTo($(".feeds"), { duration: 1500});
+	 $(".middle a").click(function() {
+        $.scrollTo($(".second-view"), { duration: 1200});
     });
 
 });
