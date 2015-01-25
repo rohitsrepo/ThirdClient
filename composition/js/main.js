@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  $('#interpret').css('margin-left','30px');
   $('li.content0').hide();
   $('ul.toggle-menu').delegate('li.toggle', 'click', function () {
         $(this).next().toggle('fast').siblings('.content0').hide('fast');

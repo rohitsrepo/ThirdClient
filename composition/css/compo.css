@@ -1,3 +1,37 @@
+/*======================= CSS RESET ==========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+/*===================CSS STARTS HERE=========================*/
+
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 html, body {
   height: 93%;
@@ -40,82 +74,6 @@ body {
   line-height: 1em;
   font-size: 2em;
 }
-
-#pageHr, #pageHrBorder {
-  position: absolute;
-  border-bottom: 25px solid #000000;
-  margin-top: -40px;
-  height: 20px;
-  right: 0px;
-  left: 0px;
-  top: 100%;
-  cursor: pointer;
-}
-#pageHr .a:before,
-#pageHr .a:after, #pageHrBorder .a:before,
-#pageHrBorder .a:after {
-  border-color: #000000 transparent;
-  border-style: solid;
-  position: absolute;
-  display: block;
-  content: "";
-}
-#pageHr .a:before, #pageHrBorder .a:before {
-  border-width: 0 20px 20px 0;
-  margin-left: 10px;
-  right: 50%;
-}
-#pageHr .a:after, #pageHrBorder .a:after {
-  border-width: 0 0 20px 20px;
-  margin-right: 10px;
-  left: 50%;
-}
-#pageHr .s:before,
-#pageHr .s:after, #pageHrBorder .s:before,
-#pageHrBorder .s:after {
-  background: #000000;
-  position: absolute;
-  display: block;
-  content: "";
-  right: 0;
-  left: 0;
-}
-#pageHr .s:before, #pageHrBorder .s:before {
-  margin-right: 20px;
-  height: 20px;
-  right: 50%;
-}
-#pageHr .s:after, #pageHrBorder .s:after {
-  margin-left: 20px;
-  height: 20px;
-  left: 50%;
-}
-
-#pageHrBorder {
-  border-bottom-color: #F5F7FA;
-  margin-top: -45px;
-}
-#pageHrBorder .a:before,
-#pageHrBorder .a:after {
-  border-color: #F5F7FA transparent;
-}
-#pageHrBorder .a:before {
-  margin-right: -2.5px;
-}
-#pageHrBorder .a:after {
-  margin-left: -2.5px;
-}
-#pageHrBorder .s:before,
-#pageHrBorder .s:after {
-  background: #F5F7FA;
-}
-#pageHrBorder .s:before {
-  margin-right: 17.36842px;
-}
-#pageHrBorder .s:after {
-  margin-left: 17.36842px;
-}
-
 
 .pagetop {
   position: relative;
@@ -259,110 +217,6 @@ img#painting {
   text-decoration: underline;
   font-weight: bold;
 }
-/*
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-#b1, 
-#b2 {
-  padding: 14px 0;
-  border: 2px #000000 solid;
-  color: #000000;
-  cursor: pointer;
-  font-family: "Montserrat", "helvetica neue", helvetica, arial, sans-serif;
-  font-size: .9em;
-  text-transform: uppercase;
-  transition: color 0.4s, background-color 0.4s;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1em;
-  outline: none;
-  text-align: center;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 210px;
-  top: 50%;
-  margin-right: 50px;
-  pointer-events: none;
-}
-#b1:hover,#b1:focus
-#b2:hover,#b2:focus {
-  transition: color 0.4s, background-color 0.4s; 
-  color: white;
-  text-decoration: none;
-  background-color: #000000;
-}
-#b1 {
-  position: absolute;
-  top: 7%;
-  left: 81%;
-  cursor: pointer;
-}
-#b2 {
-  position: absolute;
-  top: 7%;
-  left: 100%;
-  cursor: pointer;
-}
- Buttons End Here */
-
-/*Menu Starts Here*/
-/*
-.menu-links {
-  float: left;  
-  padding-left: 20px;
-}
-
-.toggle-menu {
-  float: left; 
-}
-
-.toggle-menu li {
-  display: block;
-  float: right;
-  list-style-type: none;
-  text-align: right;
-}
-
-.toggle {
-  padding-top: 5px;
-  cursor: pointer;
-}
-
-li.toggle:hover span.toggle-menu-bar {
-  background-color: #2288bb;
-}
-
-.toggle-menu-bar {
-  display: block;
-  width: 25px;
-  height: 4px;
-  background-color: black;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  margin: 0 auto 3px;
-  transition: background-color 0.2s;
-}
-
-a {
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-  padding-right: 20px;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: #2288bb;
-}
-Menu Code Ends Here */
-
-/*Interpret Button Starts Here*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
@@ -413,40 +267,6 @@ Menu Code Ends Here */
   color:#fff;
 }
 
-form{
-  background:#b4b4b4;
-  padding:6% 4%;
-}
-
-input[type="title"],textarea{
-  width:92%;
-  background:#fff;
-  margin-bottom:4%;
-  border:1px solid #ccc;
-  padding:4%;
-  font-family:'Open Sans',sans-serif;
-  font-size:95%;
-  color:#555;
-  resize: none;
-}
-
-input[type="submit"]{
-  width:100%;
-  background:#000000;
-  border:0;
-  padding:4%;
-  font-family:'Open Sans',sans-serif;
-  font-size:100%;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
-}
-
-input[type="submit"]:hover{
-  background:#2288bb;
-}
-/*Interpret Button Ends Here */
 
 /* Interpretation-Section Starts Here */
 
