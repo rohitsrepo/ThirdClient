@@ -185,7 +185,7 @@ img#painting {
 .about_art {
   display: inline;
   float: right;
-  width: 30%;
+  width: 25%;
   height: 100%;
   margin-right: 5px;
   border: 2px solid #000000;
@@ -271,9 +271,14 @@ img#painting {
 /* Interpretation-Section Starts Here */
 
 /*Interpretations*/
+.interpret {
+  margin-top: 10%;
+  padding: 2px;
+}
+
 #messages {
   position: relative;
-  margin: 50px auto;
+  margin: 70px auto;
   padding: 0;
   width: 800px;
   list-style: none; 

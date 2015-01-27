@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  $('#interpret').css('margin-left','30px');
   $('li.content0').hide();
   $('ul.toggle-menu').delegate('li.toggle', 'click', function () {
         $(this).next().toggle('fast').siblings('.content0').hide('fast');
@@ -24,14 +23,7 @@ $(document).ready(function() {
     });
 
   $("#painting").click(function() {
-        $.scrollTo($("#interpret"), { duration: 1500});
-        $('#interpret').css('margin-left','30px');
+        $.scrollTo($(".interpret"), { duration: 1500});
     });
-
-  $('#login').hide();
-  $('#toggle-login').click(function(){
-    $('#login').toggle();
-    });
-
 
 });
