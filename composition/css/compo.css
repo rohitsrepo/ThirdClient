@@ -29,12 +29,12 @@ ol, ul {
   list-style: none;
 }
 
-/*===================CSS STARTS HERE=========================*/
+/*=================== CSS STARTS HERE =========================*/
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 html, body {
   height: 100%;
-  padding: 0;
+  padding: 0; 
   margin: 0;
 }
 
@@ -43,18 +43,22 @@ body {
   background: #FFFFFF;
   background-attachment: fixed;
 }
+
+/* ========= HEADER CONTAINING LOGIN/SIGNUP/CURTAIN =========*/
 .head-top {
   width: 100%;
   height: 10%;
   margin-top: 0px;
  }
+
+ /* ================== FIRST VIEW ================*/
 .center {
   background: rgba(0, 0, 0);
   text-align: center;
   color: #000000;
   cursor: pointer;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 .middle {
   position: absolute;
@@ -74,13 +78,15 @@ body {
   font-size: 2em;
 }
 
+/* ================= HEADBAR IN SECOND VIEW ============== */
 .pagetop {
   position: relative;
   width:100%;
   height:15%;
   background-color: #222222;
+  overflow: hidden;
 }
-
+ /* =============== WIPE BUTTON ================*/
 [data-wipe] {
   display: inline-block;
   padding: 12px 18px;
@@ -128,18 +134,15 @@ body {
 }
 
 .tools_icons {
-  position: relative;
-  cursor: pointer;
-  margin-left: 5%;
-  margin-top: 10%;
+  float: left;
+  position : relative;
 }
 
 .inter_btn {
   position: relative;
+  overflow: hidden;
   margin: 0 auto;
-  width: 16%;  
-  display: block;
-  top: 15px;
+  margin-top: 2%;
 }
 
 img#painting {
@@ -147,6 +150,8 @@ img#painting {
   height: auto;
   object-fit: contain;
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
 }
 
 .social_icons {
@@ -169,22 +174,19 @@ img#painting {
   height: 123.45%;
 }
 
-#messages {
-  float: left;
-}
+
 
 .inter-heading {
   position: relative;
   font-size: 50px;
-  top: 1%;
+  margin-top: 20px;
 }
 
 .about_art {
   position: relative;
   clear: both;
-  display: inline;
+  display: inline-block;
   width: 25%;
-  height: 100%;
   border: 2px solid #000000;
   margin: 0 auto;
 }
@@ -204,6 +206,7 @@ img#painting {
 }
 #b1 a{
   text-decoration: none;
+  color: black;
 }
 #b1 #su:hover,#b1 #li:hover{
   text-decoration color: black;
@@ -211,62 +214,12 @@ img#painting {
   font-weight: bold;
 }
 
+/*=================== THIRD VIEW ==================*/
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
-.button{
-  width:200px;
-  background:#000000;
-  display:block;
-  margin:0 auto;
-  margin-top:1%;
-  padding:10px;
-  text-align:center;
-  text-decoration:none;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
-}
-
-.button:hover{
-  background:#2288bb;
-}
-
-#login{
-  top : 7%;
-  width:400px;
-  margin:0 auto;
-  margin-top:8px;
-  margin-bottom:2%;
-  transition:opacity 1s;
-  -webkit-transition:opacity 1s;
-}
-
-#triangle{
-  width:0;
-  border-top:12x solid transparent;
-  border-right:12px solid transparent;
-  border-bottom:12px solid #000000;
-  border-left:12px solid transparent;
-  margin:0 auto;
-}
-
-#login h1{
-  background:#000000;
-  padding:20px 0;
-  font-size:140%;
-  font-weight:300;
-  text-align:center;
-  color:#fff;
-}
-
-
-/* Interpretation-Section Starts Here */
-
-/*Interpretations*/
 .interpret {
-  margin-top: 10%;
-  padding: 2px;
+  padding-top: 80px;
+  display: block;
 }
 
 #messages {
@@ -275,25 +228,31 @@ img#painting {
   padding: 0;
   width: 800px;
   list-style: none; 
+  margin-right: 5%;
 }
 
 #messages li {
   float: left;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px dashed #c8c7b4; }
+  border-bottom: 1px dashed #c8c7b4; 
+}
 
 #messages li:nth-child(2n) .infos {
   float: right;
-  margin-left: 20px; }
+  margin-left: 20px; 
+}
 
 #messages li:nth-child(2n) .infos a {
   -webkit-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
   -moz-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
   box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  left: inherit; }
+  left: inherit; 
+}
 
-#messages li:nth-child(2n) .content { border-width: 1px 3px 4px 4px; }
+#messages li:nth-child(2n) .content { 
+  border-width: 1px 3px 4px 4px; 
+}
 
 #messages li:nth-child(2n) .content:after,
 #messages li:nth-child(2n) .content:before {
@@ -302,7 +261,8 @@ img#painting {
   -webkit-transform: rotate(41deg);
   -moz-transform: rotate(41deg);
   -o-transform: rotate(41deg);
-  transform: rotate(41deg); }
+  transform: rotate(41deg); 
+}
 
 #messages .infos {
   -webkit-border-radius: 50%;
@@ -315,7 +275,8 @@ img#painting {
   padding: 3px;
   width: 130px;
   height: 130px;
-  border: 5px solid #c8c7b4; }
+  border: 5px solid #c8c7b4; 
+}
 
 #messages .infos a {
   -webkit-border-radius: 17px;
@@ -333,14 +294,16 @@ img#painting {
   color: #fff;
   text-decoration: none;
   text-indent: -10000px;
-  font-size: 11px; }
+  font-size: 11px; 
+}
 
 #messages .infos a:hover {
   padding: 0 10px 0 18px;
   width: auto;
   border: none;
   text-indent: 0;
-  opacity: 0.95; }
+  opacity: 0.95; 
+}
 
 #messages img {
   -webkit-border-radius: 50%;
@@ -348,9 +311,13 @@ img#painting {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  width: 100%; }
+  width: 100%; 
+}
 
- /*Speech Bubble */
+#messages {
+  float: left;
+}
+ /*================ INTERPRETATIONS IN THIRD VIEW ================= */
 
 .content h3 {
   font: 23px "Satisfy";
@@ -376,19 +343,3 @@ img#painting {
   color: #75280c;
   font: italic normal 17px Georgia; }
 
-/* Interpretation-Section Ends Here */
-
-/*================ BOTTOM READ MORE ============*/
-.expand {
-  cursor:pointer;
-  position: relative; 
-  bottom: 0; left: 0;
-  width: 100%; 
-  text-align: center; 
-  margin: 0; padding: 30px 0; 
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, black));
-        background-image: -webkit-linear-gradient(top, transparent, black);
-        background-image: -moz-linear-gradient(top, transparent, black);
-        background-image: -ms-linear-gradient(top, transparent, black);
-        background-image: -o-linear-gradient(top, transparent, black);
-}

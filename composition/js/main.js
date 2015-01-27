@@ -26,4 +26,5 @@ $(document).ready(function() {
         $.scrollTo($(".interpret"), { duration: 1500});
     });
 
+  $(".about_art").sticky({topSpacing:50});
 });
