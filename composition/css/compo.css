@@ -16,7 +16,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, 
@@ -34,7 +33,7 @@ ol, ul {
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 html, body {
-  height: 93%;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -78,9 +77,8 @@ body {
 .pagetop {
   position: relative;
   width:100%;
-  height:90px;
-  background-color: #000000;
-  margin-top: 36px;
+  height:15%;
+  background-color: #222222;
 }
 
 [data-wipe] {
@@ -131,10 +129,9 @@ body {
 
 .tools_icons {
   position: relative;
-  float: left;
   cursor: pointer;
-  margin-left: 10px;
-  margin-top: 25px;
+  margin-left: 5%;
+  margin-top: 10%;
 }
 
 .inter_btn {
@@ -183,19 +180,20 @@ img#painting {
 }
 
 .about_art {
+  position: relative;
+  clear: both;
   display: inline;
-  float: right;
   width: 25%;
   height: 100%;
-  margin-right: 5px;
   border: 2px solid #000000;
+  margin: 0 auto;
 }
 
 .about_art p {
   margin-right: 5px;
   margin-left: 5px;
 }
-/* Login, Sign Up Buttons Start Here */
+/* ================== LOGIN / SIGNUP ===================*/
 #b1 {
   position: relative;
   float: right;
@@ -207,12 +205,7 @@ img#painting {
 #b1 a{
   text-decoration: none;
 }
-#b1 #su:hover{
-  text-decoration color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-#b1 #li:hover{
+#b1 #su:hover,#b1 #li:hover{
   text-decoration color: black;
   text-decoration: underline;
   font-weight: bold;
@@ -385,5 +378,17 @@ img#painting {
 
 /* Interpretation-Section Ends Here */
 
-/*Curtain Menu*/
-
+/*================ BOTTOM READ MORE ============*/
+.expand {
+  cursor:pointer;
+  position: relative; 
+  bottom: 0; left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; padding: 30px 0; 
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, black));
+        background-image: -webkit-linear-gradient(top, transparent, black);
+        background-image: -moz-linear-gradient(top, transparent, black);
+        background-image: -ms-linear-gradient(top, transparent, black);
+        background-image: -o-linear-gradient(top, transparent, black);
+}
