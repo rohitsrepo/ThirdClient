@@ -167,8 +167,8 @@ body {
 
 /*============== DEAL WITH ARTWORK HERE ==================*/
 img#painting {
-  width: 700px;
-  height: auto;
+  width: auto;
+  height: 80%;
   object-fit: contain;
   cursor: pointer;
   margin: 0 auto;
