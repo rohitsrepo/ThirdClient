@@ -16,7 +16,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, 
@@ -30,32 +29,37 @@ ol, ul {
   list-style: none;
 }
 
-/*===================CSS STARTS HERE=========================*/
+/*=================== CSS STARTS HERE =========================*/
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url("http://fonts.googleapis.com/css?family=Varela+Round");
 html, body {
-  height: 93%;
-  padding: 0;
+  height: 100%;
+  padding: 0; 
   margin: 0;
 }
 
 body {
   font-family: "Varela Round";
   background: #FFFFFF;
+  opacity: 1;
   background-attachment: fixed;
 }
+
+/* ========= HEADER CONTAINING LOGIN/SIGNUP/CURTAIN =========*/
 .head-top {
   width: 100%;
   height: 10%;
   margin-top: 0px;
  }
+
+ /* ================== FIRST VIEW ================*/
 .center {
   background: rgba(0, 0, 0);
   text-align: center;
   color: #000000;
   cursor: pointer;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 .middle {
   position: absolute;
@@ -69,133 +73,144 @@ body {
   line-height: 1em;
   font-size: 8em;
   margin: 0;
+  font-family: "Varela Round";
 }
 .middle span {
   line-height: 1em;
   font-size: 2em;
 }
 
+/* ================= HEADBAR IN SECOND VIEW ============== */
 .pagetop {
   position: relative;
   width:100%;
-  height:90px;
-  background-color: #000000;
-  margin-top: 36px;
+  height:15%;
+  background-color: #222222;
+  overflow: hidden;
 }
-
-[data-wipe] {
-  display: inline-block;
-  padding: 12px 18px;
-  text-decoration: none;
-  position: relative;
-  border: 2px solid #FFFFFF;
-  border-radius: 3px;
+ /* =============== HEADBAR  BUTTON ================*/
+.btn {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 300px;
+  margin: 0 10px;
+  font: 300 24px/62px "Oswald", sans-serif;
+  letter-spacing: .15em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-align: left;
-  color: #FFFFFF;
-  overflow: hidden;
+  border: 3px solid #2E9FFF;
+  background: #2E9FFF;
+  color: #fafafa;
+  margin-bottom: 2%;
+   cursor: pointer;
+
 }
-[data-wipe]:before, [data-wipe]:after {
-  content: attr(data-wipe);
-  padding-top: inherit;
-  padding-bottom: inherit;
-  white-space: nowrap;
+.btn.style1 {
+  position: relative;
+  z-index: 1;
+}
+.btn.style1:before {
   position: absolute;
-  top: 0;
-  overflow: hidden;
-  color: #000000;
-  background: #FFFFFF;
-}
-[data-wipe]:before {
-  left: 0;
-  text-indent: 18px;
+  content: '';
+  top: 50%;
+  left: 50%;
+  height: 0;
   width: 0;
+  border-radius: 50%;
+  background: #1a1a1a;
+  z-index: -1;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear 0.05s;
+  -o-transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear 0.05s;
+  -webkit-transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear;
+  -webkit-transition-delay: 0s, 0s, 0.05s;
+  transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear 0.05s;
+   cursor: pointer;
 }
-[data-wipe]:after {
-  padding-left: inherit;
-  padding-right: inherit;
-  left: 100%;
-  text-indent: calc(-100% - 36px);
-  transition: 0.2s ease-in-out;
-}
-[data-wipe]:hover:before {
+.btn.style1:hover:before {
   width: 100%;
-  transition: width 0.2s ease-in-out;
-}
-[data-wipe]:hover:after {
-  left: 0;
-  text-indent: 0;
-  transition: 0s 0.2s ease-in-out;
+  height: 100%;
+  border-radius: 0;
+
 }
 
+/*======== MANAGING HEADBAR TOOLS ===================*/
 .tools_icons {
-  position: relative;
-  float: left;
-  cursor: pointer;
-  margin-left: 10px;
-  margin-top: 25px;
+  position : relative;
+  top: 25%;
+  margin-left: 4%;
 }
 
 .inter_btn {
   position: relative;
-  margin: 0 auto;
-  width: 16%;  
+  margin: 1% auto;
   display: block;
-  top: 15px;
-}
-
-img#painting {
-  width: 700px;
-  height: auto;
-  object-fit: contain;
-  cursor: pointer;
+  bottom: 40%;
 }
 
 .social_icons {
   position: relative;
   float: right;
-  top: -40%;
-  cursor: pointer;
-  margin-right: 10px;
-}
-#painting {
-  display: block;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline;
+  bottom: 100%;
+  margin-right: 4%;
 }
 
-#interpret {
+/*============== DEAL WITH ARTWORK HERE ==================*/
+img#painting {
+  width: auto;
+  height: 98%;
+  object-fit: contain;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 2px;
+  margin: 5px auto auto auto;
+  display: block;
+}
+
+.painting-container {
+  postion: relative;
+  width: 100%;
+  height: 85%;
+}
+/*#interpret {
   background: #FFFFFF;
   position: relative;
   height: 123.45%;
-}
+}*/
 
-#messages {
-  float: left;
-}
 
-.inter-heading {
-  position: relative;
-  font-size: 50px;
-  top: 1%;
-}
 
+
+/*=============== ART INFO BOX =====================*/
 .about_art {
-  display: inline;
-  float: right;
+  position: relative;
+  clear: both;
+  display: inline-block;
   width: 25%;
-  height: 100%;
-  margin-right: 5px;
-  border: 2px solid #000000;
+  margin: 0 auto;
 }
 
-.about_art p {
+.sticky-art {
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+/*.about_art p {
   margin-right: 5px;
   margin-left: 5px;
-}
-/* Login, Sign Up Buttons Start Here */
+}*/
+/* ================== LOGIN / SIGNUP ===================*/
 #b1 {
   position: relative;
   float: right;
@@ -206,74 +221,27 @@ img#painting {
 }
 #b1 a{
   text-decoration: none;
+  color: black;
 }
-#b1 #su:hover{
+#b1 #su:hover,#b1 #li:hover{
   text-decoration color: black;
   text-decoration: underline;
   font-weight: bold;
 }
-#b1 #li:hover{
-  text-decoration color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
+
+/*=================== THIRD VIEW ==================*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-.button{
-  width:200px;
-  background:#000000;
-  display:block;
-  margin:0 auto;
-  margin-top:1%;
-  padding:10px;
-  text-align:center;
-  text-decoration:none;
-  color:#fff;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
+.inter-heading {
+  position: relative;
+  font-size: 50px;
+  margin-top: 20px;
 }
 
-.button:hover{
-  background:#2288bb;
-}
-
-#login{
-  top : 7%;
-  width:400px;
-  margin:0 auto;
-  margin-top:8px;
-  margin-bottom:2%;
-  transition:opacity 1s;
-  -webkit-transition:opacity 1s;
-}
-
-#triangle{
-  width:0;
-  border-top:12x solid transparent;
-  border-right:12px solid transparent;
-  border-bottom:12px solid #000000;
-  border-left:12px solid transparent;
-  margin:0 auto;
-}
-
-#login h1{
-  background:#000000;
-  padding:20px 0;
-  font-size:140%;
-  font-weight:300;
-  text-align:center;
-  color:#fff;
-}
-
-
-/* Interpretation-Section Starts Here */
-
-/*Interpretations*/
 .interpret {
-  margin-top: 10%;
-  padding: 2px;
+  padding-top: 80px;
+  display: block;
 }
 
 #messages {
@@ -282,25 +250,31 @@ img#painting {
   padding: 0;
   width: 800px;
   list-style: none; 
+  margin-right: 5%;
 }
 
 #messages li {
   float: left;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px dashed #c8c7b4; }
+  border-bottom: 1px dashed #c8c7b4; 
+}
 
 #messages li:nth-child(2n) .infos {
   float: right;
-  margin-left: 20px; }
+  margin-left: 20px; 
+}
 
 #messages li:nth-child(2n) .infos a {
   -webkit-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
   -moz-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
   box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  left: inherit; }
+  left: inherit; 
+}
 
-#messages li:nth-child(2n) .content { border-width: 1px 3px 4px 4px; }
+#messages li:nth-child(2n) .content { 
+  border-width: 1px 3px 4px 4px; 
+}
 
 #messages li:nth-child(2n) .content:after,
 #messages li:nth-child(2n) .content:before {
@@ -309,7 +283,8 @@ img#painting {
   -webkit-transform: rotate(41deg);
   -moz-transform: rotate(41deg);
   -o-transform: rotate(41deg);
-  transform: rotate(41deg); }
+  transform: rotate(41deg); 
+}
 
 #messages .infos {
   -webkit-border-radius: 50%;
@@ -322,7 +297,8 @@ img#painting {
   padding: 3px;
   width: 130px;
   height: 130px;
-  border: 5px solid #c8c7b4; }
+  border: 5px solid #c8c7b4; 
+}
 
 #messages .infos a {
   -webkit-border-radius: 17px;
@@ -340,14 +316,16 @@ img#painting {
   color: #fff;
   text-decoration: none;
   text-indent: -10000px;
-  font-size: 11px; }
+  font-size: 11px; 
+}
 
 #messages .infos a:hover {
   padding: 0 10px 0 18px;
   width: auto;
   border: none;
   text-indent: 0;
-  opacity: 0.95; }
+  opacity: 0.95; 
+}
 
 #messages img {
   -webkit-border-radius: 50%;
@@ -355,9 +333,13 @@ img#painting {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  width: 100%; }
+  width: 100%; 
+}
 
- /*Speech Bubble */
+#messages {
+  float: left;
+}
+ /*================ INTERPRETATIONS IN THIRD VIEW ================= */
 
 .content h3 {
   font: 23px "Satisfy";
@@ -383,7 +365,73 @@ img#painting {
   color: #75280c;
   font: italic normal 17px Georgia; }
 
-/* Interpretation-Section Ends Here */
 
-/*Curtain Menu*/
-
+/*=============== CURTAIN MENU ===================*/
+#left-panel .left-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  box-shadow: 3px 1px 5px 0px rgba(50, 50, 50, 0.29);
+  padding: 10px 15px;
+  color: #FFF;
+  background-color: #2B3535;
+  transform: translate(-441px, 0px);
+  transition: all ease-in-out 300ms;
+  opacity: 0.9;
+  z-index: 2;
+   cursor: pointer;
+}
+#left-panel .left-nav h3 {
+  text-transform: uppercase;
+}
+#left-panel .ham-button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  outline: none;
+}
+#left-panel .ham-button span.icon-bar {
+  width: 25px;
+  height: 4px;
+  margin-bottom: 2px;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  transition: all linear 200ms;
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+#left-panel .ham-button:hover, #left-panel .ham-button:focus {
+  cursor: pointer;
+}
+#left-panel.open {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+}
+#left-panel.open .ham-button {
+  left: 284px;
+}
+#left-panel.open .ham-button span.icon-bar {
+  background-color: #e74c3c;
+}
+#left-panel.open .ham-button span.icon-bar:nth-child(2) {
+  opacity: 0;
+}
+#left-panel.open .ham-button span.icon-bar:nth-child(1) {
+  transform: rotate(45deg);
+  top: 7px;
+}
+#left-panel.open .ham-button span.icon-bar:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -5px;
+}
+#left-panel.open .left-nav {
+  transform: translate(0px, 0px);
+}
