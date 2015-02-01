@@ -47,6 +47,10 @@ html, body {
   font-family: "Varela Round";
   font-size: 100%;
 }
+
+a {
+  text-decoration: none;
+}
  
 /*=================== Head Banner =========================*/
 
@@ -72,8 +76,7 @@ html, body {
   margin-bottom: 0.7em;
 }
  
-a {
-  text-decoration: none;
+.banner a {
   font-weight: bold;
  }
 
@@ -97,31 +100,15 @@ a {
 /*=============== IMAGE FEED ==============*/
 
 .posts {
-  height: 100%;
+  height: 60%;
 }
 
 .post {
   min-height: 100%;
   width: 90%;
-  margin: 0 auto;
+  margin: 2.5% auto;
   display: block;
-}
-
-.post header {
-  height: 10vh;
-  margin: 2.5% 0;
-  font-size: 10vh;
-  font-family: "Varela Round";
-  text-align: center;
-}
-
-.artist {
-  font-size: 5vh;
-}
-
-.post article {
-  height: 70vh;
-  margin-bottom: 2.5%;
+  box-shadow: 10px 10px 5px 5px #D6D1D1;
 }
 
 .artwork {
@@ -130,6 +117,7 @@ a {
   display: inline-block;
   float: left;
   vertical-align: center;
+  overflow: hidden;
 }
 
 .description {
@@ -137,29 +125,37 @@ a {
   float: right;
   width: 45%;
   vertical-align:top;
+  padding-right: .5em;
 }
 
-.middle {
-  height: 7.5vh;
-  margin-bottom: 2.5%;
-  text-align: right;
+.description-header {
+  font-size: 6vh;
+  line-height: .6em;
+  font-family: "Varela Round";
+  text-align: left;
+  padding-bottom: 1.5em;
+}
+
+.description .artist {
+  font-size: 3vh;
 }
 
 /*=========== TOP INTERPRETATION ==============*/
 .comment {
-  border-left: 4px solid #000; 
-  padding: 0 1% 1% 3%;
   margin-bottom: 5%;
 }
 
-.comment-header {
-  margin-bottom: 1%;
+.comment-header a {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .icon {
   width: 3%;
   margin-right: 0.5%;
 }
+
+.comment p {}
 
 span a {
   color: #000;
@@ -181,4 +177,18 @@ span a {
   color: #000;
   overflow: hidden;
   font-size: 30px;
+}
+
+/*================= Clearfix =====================*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
 }
