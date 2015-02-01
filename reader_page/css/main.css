@@ -50,21 +50,21 @@ html, body {
  
 /*=================== Head Banner =========================*/
 
-.first-view {
+.banner {
   width: 100%;
   height: 100%;
   background: url(img/banner.jpg) no-repeat center top;
   background-size: cover;
-}
+} 
 
-.first-view .middle {
+.banner section {
   text-align: center;
   position: absolute;
   right: 0;
   left: 0;
   top: 30%;
 }
-.first-view .middle h1 {
+.banner section h1 {
   font-family: "Lusitana";
   font-weight: normal;
   line-height: 1em;
@@ -84,19 +84,19 @@ a {
   padding: 12px 18px;
   text-decoration: none;
   position: relative;
-  border: 1px solid #FFF;
+  border: 1px solid #000;
   border-radius: 3px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: center;
-  color: #FFFFFF;
+  color: #000;
   overflow: hidden;
   font-size: 30px;
 }
 
 /*=============== IMAGE FEED ==============*/
 
-.second-view {
+.posts {
   height: 100%;
 }
 
@@ -121,7 +121,7 @@ a {
 
 .post article {
   height: 70vh;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 .artwork {
@@ -140,7 +140,9 @@ a {
 }
 
 .middle {
-  height: 10vh;
+  height: 7.5vh;
+  margin-bottom: 2.5%;
+  text-align: right;
 }
 
 /*=========== TOP INTERPRETATION ==============*/
@@ -165,44 +167,18 @@ span a {
 
 
 /*=========== NEXT PAINTING ARROW ====================*/
-.down-arrow {
-  position: relative;
+
+.next-post {
+  font-family: "Varela Round";
   display: inline-block;
-  border-radius: 30%;
+  padding: 12px 18px;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   text-align: center;
-  margin-right: 5%;
-  width: 10%;
-  vertical-align: top;
+  color: #000;
+  overflow: hidden;
+  font-size: 30px;
 }
-
-.down-arrow:hover .bottom {
-  border: 0.5em solid #e74c3c;
-}
-
-.down-arrow:hover .bottom:after {
-  border-top: 0.5em solid #e74c3c;
-  border-right: 0.5em solid #e74c3c;
-}
-
-.bottom {
-  display: inline-block;
-  width: 3.5em;
-  height: 3.5em;
-  border: 0.5em solid #333;
-  border-radius: 50%;
-  margin-left: 0.75em;
-}
-
-.bottom:after {
-  content: '';
-  display: inline-block;
-  margin-top: 0.6em;
-  width: 1.4em;
-  height: 1.4em;
-  border-top: 0.5em solid #333;
-  border-right: 0.5em solid #333;
-  -moz-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
