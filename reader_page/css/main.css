@@ -127,9 +127,8 @@ a {
 .artwork {
   position: relative; 
   left: 5%;
-  top: 30%;
   width: 40%;
-  margin-top: 1%;
+  margin-bottom: 4%
 }
 
 .description {
@@ -137,8 +136,7 @@ a {
   width: 45%;
   margin: 0 auto;
   display: inline-block;
-  margin-left: 7%;
-  vertical-align:top;
+  left: 7%;
 }
 
 .feeds {
@@ -215,4 +213,70 @@ span a {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+
+/*============ STREAM BAR HERE ============*/
+.sorting-labels {
+  position: relative;
+  margin-top: 100%;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-left: 1%;
+}
+.sorting-labels > div {
+  width: 40%
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  height: 10%;
+  z-index: 5;
+}
+.sorting-labels a {
+  float: left; 
+  margin-right: 20px;
+   background-color: #FFFFFF;
+
+}
+
+.sort-top{
+  cursor: pointer;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.sort-top:hover{
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.effects-overlay{
+    border:solid 2px #1f1f1f;
+    background: transparent;
+    color: #1f1f1f;
+}
+.effects-overlay:hover,
+.effects-overlay.active{
+    border:solid 2px #1f1f1f;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+
+
+
 
