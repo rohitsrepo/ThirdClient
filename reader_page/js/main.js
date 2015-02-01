@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    $('.sorting-labels').hide();
-    $('.second-view').mouseenter(function() {
-        $('.sorting-labels').show();
-    });
-    $('.second-view').mouseleave(function() {
-        $('.sorting-labels').hide();
-    });
 	 $(".middle a").click(function() {
         $.scrollTo($(".second-view"), { duration: 1200});
     });
