@@ -68,9 +68,10 @@ a {
   left: 0;
   top: 30%;
 }
+
 .banner section h1 {
   font-family: "Lusitana";
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1em;
   font-size: 11em;
   margin-bottom: 0.7em;
@@ -129,15 +130,33 @@ a {
 }
 
 .description-header {
-  font-size: 6vh;
-  line-height: .6em;
-  font-family: "Varela Round";
-  text-align: left;
   padding-bottom: 1.5em;
+  text-align: left;
 }
 
-.description .artist {
-  font-size: 3vh;
+.description-header h4 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 31px;
+  letter-spacing: -.48px;
+  text-decoration: none solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Varela Round";
+  margin-bottom: 10px;
+}
+
+.description-header h5 {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.36px;
+  line-height: 19.6px;
+  text-decoration: none solid rgba(0, 0, 0, 0.3);
+}
+
+.description-header .artist {
+  color: rgb(87, 173, 104);
+  text-decoration: none solid rgb(87, 173, 104);
 }
 
 /*=========== TOP INTERPRETATION ==============*/
@@ -145,9 +164,28 @@ a {
   margin-bottom: 5%;
 }
 
-.comment-header a {
-  font-size: 1em;
-  line-height: 1.5em;
+.comment-text {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  letter-spacing: -0.36px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none solid rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+.comment-footer {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.36px;
+  line-height: 19.6px;
+  text-decoration: none solid rgba(0, 0, 0, 0.3);
+}
+
+.comment-footer a {
+  color: rgb(87, 173, 104);
+  text-decoration: none solid rgb(87, 173, 104);
 }
 
 .icon {
