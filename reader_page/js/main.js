@@ -1,18 +1,13 @@
 $(document).ready(function() {
-	 $(".middle a").click(function() {
-        $.scrollTo($(".second-view"), { duration: 1200});
+    $('.sorting-labels').hide();
+    $('.posts').mouseenter(function() {
+        $('.sorting-labels').show();
     });
-	 $(".da0").click(function() {
-        $.scrollTo($(".feed1"), { duration: 1000});
+    $('.posts').mouseleave(function() {
+        $('.sorting-labels').hide();
     });
-	 $(".da1").click(function() {
-        $.scrollTo($(".feed2"), { duration: 1000});
-    });
-	 $(".da2").click(function() {
-        $.scrollTo($(".feed3"), { duration: 1000});
-    });
-	 $(".da3").click(function() {
-        $.scrollTo($(".feed4"), { duration: 1000});
+     $(".explore").click(function() {
+        $.scrollTo($(".posts"), { duration: 1200});
     });
 
 });
