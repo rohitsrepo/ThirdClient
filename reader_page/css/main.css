@@ -319,6 +319,7 @@ span a {
   background-color: #FFF;
   margin: 8px 0;
   display: block;
+  border: 1px solid black;
 }
 
 .span1,
