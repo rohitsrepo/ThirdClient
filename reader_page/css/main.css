@@ -180,11 +180,11 @@ a {
   cursor: pointer;
 }
 .comment-text p:hover {
-  text-shadow: -1px 1px 1px rgba(65,145,255,1),
-               -2px 2px 1px rgba(65,145,255,1),
-               -3px 3px 1px rgba(65,145,255,1),
-               -4px 4px 1px rgba(65,145,255,1),
-               -5px 5px 1px rgba(65,145,255,1);
+  text-shadow: -1px 1px 1px #E9EAEA,
+               -2px 1px 1px #E9EAEA,
+               -3px 1px 1px #E9EAEA,
+               -4px 1px 1px #E9EAEA,
+               -5px 1px 1px #E9EAEA;
 }
 
 .comment-footer {
