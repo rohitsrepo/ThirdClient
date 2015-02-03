@@ -175,8 +175,9 @@ a {
 
 /*=========== TOP INTERPRETATION ==============*/
 .comment {
-  padding-bottom: 7%;
-  height: 56%
+  height: 52%;
+  margin-bottom: 4%;
+  position: relative;
 }
 
 .comment-text {
@@ -186,7 +187,8 @@ a {
   letter-spacing: 0.3px;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none solid rgba(0, 0, 0, 0.8);
-  margin-bottom: 10px;
+  position: absolute;
+  bottom: 15%;
 }
 
 .comment-footer {
@@ -196,16 +198,13 @@ a {
   letter-spacing: 0.1px;
   line-height: 19.6px;
   text-decoration: none solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
 }
 
 .comment-footer a {
   color: rgb(87, 173, 104);
   text-decoration: none solid rgb(87, 173, 104);
-}
-
-.icon {
-  width: 3%;
-  margin-right: 0.5%;
 }
 
 .description-footer{
@@ -218,7 +217,7 @@ a {
 }
 
 .description-footer li {
-  float: right;
+  float: left;
   height: 100%;
   margin: 0 3px;
 }
