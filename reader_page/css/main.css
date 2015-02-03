@@ -45,9 +45,11 @@ ol, ul {
 }
 
 *,
-before:,
-after: {
-  box-sizing: border-box;
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -115,12 +117,13 @@ a {
 }
 
 .post {
-  min-height: 100%;
+  height: 100%;
   width: 90%;
   margin: 2.5% auto;
   display: block;
   box-shadow: 10px 10px 5px 5px #D6D1D1;
   font-family: "taile";
+  overflow: hidden;
 }
 
 .artwork {
@@ -133,6 +136,7 @@ a {
 }
 
 .description {
+  height: 100%;
   display: inline-block;
   float: right;
   width: 45%;
@@ -143,6 +147,7 @@ a {
 .description-header {
   padding-bottom: 2em;
   text-align: left;
+  height: 30%;
 }
 
 .description-header h4 {
@@ -152,7 +157,6 @@ a {
   letter-spacing: 0.5px;
   text-decoration: none solid rgba(0, 0, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 10px;
 }
 
 .description-header h5 {
@@ -171,7 +175,8 @@ a {
 
 /*=========== TOP INTERPRETATION ==============*/
 .comment {
-  margin-bottom: 5%;
+  padding-bottom: 7%;
+  height: 56%
 }
 
 .comment-text {
@@ -203,12 +208,31 @@ a {
   margin-right: 0.5%;
 }
 
-.comment p {}
-
-span a {
-  color: #000;
+.description-footer{
+  height: 10%;
+  margin-bottom: 4%
 }
 
+.description-footer ul {
+  height: 100%;
+}
+
+.description-footer li {
+  float: right;
+  height: 100%;
+  margin: 0 3px;
+}
+
+.description-footer img {
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.description-footer img:hover {
+  opacity: 1;
+}
 
 /*=========== NEXT PAINTING ARROW ====================*/
 
