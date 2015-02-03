@@ -32,7 +32,17 @@ ol, ul {
 
 /*===================CSS STARTS HERE=========================*/
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@font-face {
+    font-family: taile;
+    src: url(fonts/TAILEB.TTF);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family: taile;
+    src: url(fonts/TAILE.TTF);
+    font-weight:400;
+}
 
 *,
 before:,
@@ -110,6 +120,7 @@ a {
   margin: 2.5% auto;
   display: block;
   box-shadow: 10px 10px 5px 5px #D6D1D1;
+  font-family: "taile";
 }
 
 .artwork {
@@ -130,18 +141,17 @@ a {
 }
 
 .description-header {
-  padding-bottom: 1.5em;
+  padding-bottom: 2em;
   text-align: left;
 }
 
 .description-header h4 {
   font-size: 36px;
   font-weight: bold;
-  line-height: 31px;
-  letter-spacing: -.48px;
+  line-height: 42px;
+  letter-spacing: 0.5px;
   text-decoration: none solid rgba(0, 0, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Varela Round";
   margin-bottom: 10px;
 }
 
@@ -149,7 +159,7 @@ a {
   font-size: 18px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.3);
-  letter-spacing: -0.36px;
+  letter-spacing: 0.1px;
   line-height: 19.6px;
   text-decoration: none solid rgba(0, 0, 0, 0.3);
 }
@@ -166,9 +176,9 @@ a {
 
 .comment-text {
   font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  letter-spacing: -0.36px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.3px;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none solid rgba(0, 0, 0, 0.8);
   margin-bottom: 10px;
@@ -178,7 +188,7 @@ a {
   font-size: 18px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.3);
-  letter-spacing: -0.36px;
+  letter-spacing: 0.1px;
   line-height: 19.6px;
   text-decoration: none solid rgba(0, 0, 0, 0.3);
 }
