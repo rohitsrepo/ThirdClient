@@ -199,21 +199,30 @@ a {
   text-decoration: none solid rgb(87, 173, 104);
 }
 
-.description-footer li {
-  float: left;
-  margin: 0 3px;
+.description-footer ul {
+  margin-right: 5px;
 }
 
-.description-footer img {
-  height: 35px;
+.description-footer .icon {
+  height: 30px;
   width: auto;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.5;
   margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.description-footer img:hover {
+.description-footer .icon:hover {
   opacity: 1;
+}
+
+.description-footer .icon-left{
+  float: left;
+}
+
+.description-footer .icon-right{
+  float: right;
 }
 
 /*================= Clearfix =====================*/
