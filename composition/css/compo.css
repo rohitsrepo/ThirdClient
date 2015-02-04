@@ -31,7 +31,16 @@ ol, ul {
 
 /*=================== CSS STARTS HERE =========================*/
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @import url("http://fonts.googleapis.com/css?family=Varela+Round");
+
 html, body {
   height: 100%;
   padding: 0; 
@@ -45,39 +54,70 @@ body {
   background-attachment: fixed;
 }
 
-/* ========= HEADER CONTAINING LOGIN/SIGNUP/CURTAIN =========*/
-.head-top {
+/* ========= PRIMARY HEADER =========*/
+
+.primary-header {
   width: 100%;
-  height: 10%;
-  margin-top: 0px;
+  min-height: 100%;
+}
+
+/* ========= NAVIGATION HEADER CONTAINING LOGIN/SIGNUP/CURTAIN =========*/
+.nav-header {
+  width: 94%;
+  margin: 0 auto;
  }
 
+.nav-header .left {
+  float: left;
+ }
+
+.nav-header .right {
+  float: right;
+ }
+
+ /* ================== LOGIN / SIGNUP ===================*/
+#b1 {
+  position: relative;
+  float: right;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 15px;
+  color: black;
+}
+#b1 a{
+  text-decoration: none;
+  color: black;
+}
+#b1 #su:hover,#b1 #li:hover{
+  text-decoration color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
  /* ================== FIRST VIEW ================*/
-.center {
-  background: rgba(0, 0, 0);
+.banner {
   text-align: center;
   color: #000000;
   cursor: pointer;
-  width: 100%;
-  height: 90%;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
-.middle {
+
+.banner h1 {
+  font-weight: bold;
+  font-size: 5em;
+  margin-bottom: .25em;
+}
+.banner h3 {
+  font-size: 1.5em;
+}
+
+.primary-header footer {
   position: absolute;
-  margin-top: -6em;
-  right: 0;
-  left: 0;
-  top: 50%;
-}
-.middle h1 {
-  font-weight: normal;
-  line-height: 1em;
-  font-size: 8em;
-  margin: 0;
-  font-family: "Varela Round";
-}
-.middle span {
-  line-height: 1em;
-  font-size: 2em;
+  bottom: 2.5%;
+  right: 2%;
 }
 
 /* ================= HEADBAR IN SECOND VIEW ============== */
@@ -210,24 +250,6 @@ img#painting {
   margin-right: 5px;
   margin-left: 5px;
 }*/
-/* ================== LOGIN / SIGNUP ===================*/
-#b1 {
-  position: relative;
-  float: right;
-  font-size: 20px;
-  margin-top: 15px;
-  margin-right: 15px;
-  color: black;
-}
-#b1 a{
-  text-decoration: none;
-  color: black;
-}
-#b1 #su:hover,#b1 #li:hover{
-  text-decoration color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
 
 /*=================== THIRD VIEW ==================*/
 
@@ -434,4 +456,19 @@ img#painting {
 }
 #left-panel.open .left-nav {
   transform: translate(0px, 0px);
+}
+
+
+/*================= Clearfix =====================*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
 }
