@@ -81,6 +81,9 @@ a {
   font-weight: bold;
  }
 
+.tdime , .explore{
+  z-index: 60;
+}
 /*============== EXPLORE BUTTON ====================*/
 .explore {
   font-family: "Varela Round";
@@ -401,7 +404,6 @@ span a {
 input {
   font: 16px/26px "Raleway", sans-serif; }
 
-
 .form-wrap {
   vertical-align: middle;
   background-color: #fff;
@@ -410,6 +412,7 @@ input {
   box-shadow: 0px 1px 8px #BEBEBE;
   -webkit-box-shadow: 0px 1px 8px #BEBEBE;
   -moz-box-shadow: 0px 1px 8px #BEBEBE; 
+  z-index: 50;
 }
 .form-wrap .tabs {
   overflow: hidden; 
@@ -515,67 +518,28 @@ input {
     font-size: 14px; 
   }
 /*===================== IMAGE INK EFFECT ===================*/
-.button {
-  position: relative;
-  overflow: hidden;
-  margin: 0.5em 0;
-  color: rgba(0, 0, 0, 0.56);
-  font-size: 1.1em;
-  font-weight: 500;
-  background: #ccc;
-  border-radius: 0.25em;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
-}
 
-.button-ink {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-.button-ink.raised {
-  -webkit-animation: raised 0.45s ease;
-          animation: raised 0.45s ease;
-}
-
+/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
 .ink {
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  border-radius: 51%;
-  background: #ffeb3b;
+  display: block; position: absolute;
+  background: hsl(180, 40%, 80%);
+  border-radius: 100%;
+  transform: scale(0);
 }
-.ink.spill {
-  -webkit-animation: spill 0.65s ease;
-          animation: spill 0.65s ease;
+/*animation effect*/
+.ink.animate {animation: ripple 0.65s linear;}
+@keyframes ripple {
+  /*scale the element to 250% to safely cover the entire link and fade it out*/
+  100% {opacity: 0; transform: scale(2.5);}
 }
 
-@-webkit-keyframes spill {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(3.5);
-            transform: scale(3.5);
-  }
-}
 
-@keyframes spill {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(3.5);
-            transform: scale(3.5);
-  }
-}
-@-webkit-keyframes raised {
-  100% {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  }
-}
-@keyframes raised {
-  100% {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  }
-}
+
+
+
+
+
+
 
 
 
