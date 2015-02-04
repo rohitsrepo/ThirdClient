@@ -68,29 +68,29 @@ a {
 
 .banner {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: url(img/banner.jpg) no-repeat center top;
   background-size: cover;
 } 
 
 .banner section {
   text-align: center;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 30%;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .banner section h1 {
   font-family: "Lusitana";
   font-weight: bold;
-  line-height: 1em;
-  font-size: 11em;
+  font-size: 8em;
   margin-bottom: 0.7em;
+  padding-top: 15%;
 }
  
 .banner a {
   font-weight: bold;
+  margin-bottom: 10px;
  }
 
 /*============== EXPLORE BUTTON ====================*/
@@ -117,11 +117,10 @@ a {
 }
 
 .post {
-  height: 100%;
-  width: 90%;
-  margin: 2.5% auto;
+  width: 80%;
+  margin: 5% auto;
   display: block;
-  box-shadow: 10px 10px 5px 5px #D6D1D1;
+  box-shadow: 10px 10px 2px 0px #D6D1D1;
   font-family: "taile";
   overflow: hidden;
 }
@@ -136,7 +135,6 @@ a {
 }
 
 .description {
-  height: 100%;
   display: inline-block;
   float: right;
   width: 45%;
@@ -145,9 +143,8 @@ a {
 }
 
 .description-header {
-  padding-bottom: 2em;
   text-align: left;
-  height: 30%;
+  margin-bottom: 20px;
 }
 
 .description-header h4 {
@@ -164,7 +161,7 @@ a {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.1px;
-  line-height: 19.6px;
+  line-height: 22px;
   text-decoration: none solid rgba(0, 0, 0, 0.3);
 }
 
@@ -175,31 +172,26 @@ a {
 
 /*=========== TOP INTERPRETATION ==============*/
 .comment {
-  height: 52%;
-  margin-bottom: 4%;
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .comment-text {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 31px;
-  letter-spacing: 0.3px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none solid rgba(0, 0, 0, 0.8);
-  position: absolute;
-  bottom: 15%;
+  margin-bottom: 7px;
 }
 
 .comment-footer {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.1px;
-  line-height: 19.6px;
+  line-height: 22px;
   text-decoration: none solid rgba(0, 0, 0, 0.3);
-  position: absolute;
-  bottom: 0;
 }
 
 .comment-footer a {
@@ -207,47 +199,21 @@ a {
   text-decoration: none solid rgb(87, 173, 104);
 }
 
-.description-footer{
-  height: 10%;
-  margin-bottom: 4%
-}
-
-.description-footer ul {
-  height: 100%;
-}
-
 .description-footer li {
   float: left;
-  height: 100%;
   margin: 0 3px;
 }
 
 .description-footer img {
-  height: 100%;
+  height: 35px;
   width: auto;
   cursor: pointer;
   opacity: 0.7;
+  margin-bottom: 5px;
 }
 
 .description-footer img:hover {
   opacity: 1;
-}
-
-/*=========== NEXT PAINTING ARROW ====================*/
-
-.next-post {
-  font-family: "Varela Round";
-  display: inline-block;
-  padding: 12px 18px;
-  text-decoration: none;
-  border: 1px solid #000;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-align: center;
-  color: #000;
-  overflow: hidden;
-  font-size: 30px;
 }
 
 /*================= Clearfix =====================*/
