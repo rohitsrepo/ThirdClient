@@ -121,7 +121,8 @@ a {
   width: 90%;
   margin: 2.5% auto;
   display: block;
-  box-shadow: 10px 10px 5px 5px #D6D1D1;
+  box-shadow: 6px 10px 43px 9px #D6D1D1;
+  border: 1px solid #a1a1a1;
   font-family: "taile";
   overflow: hidden;
 }
@@ -145,6 +146,7 @@ a {
 }
 
 .description-header {
+  padding-top: 5em;
   padding-bottom: 2em;
   text-align: left;
   height: 30%;
