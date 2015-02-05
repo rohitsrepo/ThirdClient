@@ -12,11 +12,18 @@ $(document).ready(function() {
         $(".curtain-content").removeClass('fadeOutLeft');
         $(".curtain-content").addClass('fadeInLeft');
         $(".curtain-content").animate({marginLeft:0},400);
+        $("html,body").css('overflow-x','hidden');
+        $("html,body").css('overflow-y','auto');
+        $(".tdime, .posts, .banner").css('padding-left','300px');
+        $(".banner").css('position','relative');
       }
     else {
         $(".curtain-content").removeClass('fadeInLeft');
         $(".curtain-content").addClass('fadeOutLeft');
         $(".curtain-contents").animate({marginLeft:-330},400);
+        $(".tdime, .posts, .banner").css('padding-left','0px');
+        $("html,body").css('overflow-x','visible');
+        $("html,body").css('overflow-y','visible');
     }
     //$(".curtain-content").toggle();
     });
