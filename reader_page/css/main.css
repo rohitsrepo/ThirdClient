@@ -299,6 +299,7 @@ span a {
   cursor: pointer;
   margin-top: 1%;
   margin-left: 20px;
+  z-index: 100;
 }
 
 .curtain-content{
@@ -308,6 +309,7 @@ span a {
   background-color: #363a3d;
   z-index: 99;
   height: 100%;
+  margin-left: -330px;
 }
 
 .curtain-content a {
@@ -327,6 +329,10 @@ span a {
 .curtain-content hr {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#first {
+  padding-top: 80px;
 }
 /*====================== LOGIN / SIGNUP ===============*/
 .sign-log {
@@ -465,19 +471,6 @@ input {
   }
 /*===================== IMAGE INK EFFECT ===================*/
 
-/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
-.ink {
-  display: block; position: absolute;
-  background: hsl(180, 40%, 80%);
-  border-radius: 100%;
-  transform: scale(0);
-}
-/*animation effect*/
-.ink.animate {animation: ripple 0.65s linear;}
-@keyframes ripple {
-  /*scale the element to 250% to safely cover the entire link and fade it out*/
-  100% {opacity: 0; transform: scale(2.5);}
-}
 
 
 

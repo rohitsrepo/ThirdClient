@@ -5,21 +5,20 @@ $(document).ready(function() {
 
    //DEAL WITH CURTAIN HERE
    var fl = 1;
-    $(".curtain-content").hide();
+    //$(".curtain-content").hide();
     $(".menuIcon").click(function () {
       fl = fl + 1;
       if(fl%2==0){
-        $(".curtain-content").removeClass('fadeInRight');
+        $(".curtain-content").removeClass('fadeOutLeft');
         $(".curtain-content").addClass('fadeInLeft');
         $(".curtain-content").animate({marginLeft:0},400);
-        $(".menuIcon").animate({marginLeft:335},400);
       }
     else {
         $(".curtain-content").removeClass('fadeInLeft');
-        $(".curtain-contents").animate({marginLeft:-220},400);
-        $(".menuIcon").animate({marginLeft:20},400);
+        $(".curtain-content").addClass('fadeOutLeft');
+        $(".curtain-contents").animate({marginLeft:-330},400);
     }
-    $(".curtain-content").toggle();
+    //$(".curtain-content").toggle();
     });
 
     
