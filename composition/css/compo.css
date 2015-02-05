@@ -49,9 +49,6 @@ html, body {
 
 body {
   font-family: "Varela Round";
-  background: #FFFFFF;
-  opacity: 1;
-  background-attachment: fixed;
 }
 
 /* ========= PRIMARY HEADER =========*/
@@ -101,8 +98,8 @@ body {
   cursor: pointer;
   width: 80%;
   margin: 0 auto;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 .banner h1 {
@@ -121,115 +118,38 @@ body {
 }
 
 /* ================= HEADBAR IN SECOND VIEW ============== */
-.pagetop {
-  position: relative;
+.painting-area {
   width:100%;
-  height:15%;
-  background-color: #222222;
-  overflow: hidden;
+  height:100%;
 }
- /* =============== HEADBAR  BUTTON ================*/
-.btn {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 300px;
-  margin: 0 10px;
-  font: 300 24px/62px "Oswald", sans-serif;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  border: 3px solid #2E9FFF;
-  background: #2E9FFF;
-  color: #fafafa;
-  margin-bottom: 2%;
-   cursor: pointer;
 
-}
-.btn.style1 {
-  position: relative;
-  z-index: 1;
-}
-.btn.style1:before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  height: 0;
-  width: 0;
-  border-radius: 50%;
-  background: #1a1a1a;
-  z-index: -1;
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -moz-transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear 0.05s;
-  -o-transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear 0.05s;
-  -webkit-transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear;
-  -webkit-transition-delay: 0s, 0s, 0.05s;
-  transition: width 0.3s, height 0.2s ease-in-out, border-radius 0.1s linear 0.05s;
-   cursor: pointer;
-}
-.btn.style1:hover:before {
+.painting-toolbar {
   width: 100%;
-  height: 100%;
-  border-radius: 0;
-
+  background: rgba(0, 0, 0, .9);
+  padding: 10px 0 ;
 }
 
-/*======== MANAGING HEADBAR TOOLS ===================*/
-.tools_icons {
-  position : relative;
-  top: 25%;
-  margin-left: 4%;
-}
-
-.inter_btn {
-  position: relative;
-  margin: 1% auto;
-  display: block;
-  bottom: 40%;
-}
-
-.social_icons {
-  position: relative;
+.painting-toolbar .social-icons{
   float: right;
-  display: inline;
-  bottom: 100%;
-  margin-right: 4%;
+  padding-right: 15%;
 }
 
-/*============== DEAL WITH ARTWORK HERE ==================*/
-img#painting {
-  width: auto;
-  height: 98%;
-  object-fit: contain;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 2px;
-  margin: 5px auto auto auto;
-  display: block;
+.painting-toolbar .tools-icons{
+  float: left;
+  padding-left: 15%;
 }
 
 .painting-container {
-  postion: relative;
-  width: 100%;
   height: 85%;
+  width: 100%;
+  text-align: center;
+  margin: 20px;
 }
-/*#interpret {
-  background: #FFFFFF;
-  position: relative;
-  height: 123.45%;
-}*/
 
-
-
+.painting {
+  height: 100%;
+  width: auto;
+}
 
 /*=============== ART INFO BOX =====================*/
 .about_art {
@@ -386,77 +306,6 @@ img#painting {
   display: block;
   color: #75280c;
   font: italic normal 17px Georgia; }
-
-
-/*=============== CURTAIN MENU ===================*/
-#left-panel .left-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 240px;
-  height: 100%;
-  box-shadow: 3px 1px 5px 0px rgba(50, 50, 50, 0.29);
-  padding: 10px 15px;
-  color: #FFF;
-  background-color: #2B3535;
-  transform: translate(-441px, 0px);
-  transition: all ease-in-out 300ms;
-  opacity: 0.9;
-  z-index: 2;
-   cursor: pointer;
-}
-#left-panel .left-nav h3 {
-  text-transform: uppercase;
-}
-#left-panel .ham-button {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  left: 10px;
-  top: 25px;
-  outline: none;
-}
-#left-panel .ham-button span.icon-bar {
-  width: 25px;
-  height: 4px;
-  margin-bottom: 2px;
-  background-color: #fff;
-  display: block;
-  position: relative;
-  transition: all linear 200ms;
-  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
-}
-#left-panel .ham-button:hover, #left-panel .ham-button:focus {
-  cursor: pointer;
-}
-#left-panel.open {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(128, 128, 128, 0.5);
-}
-#left-panel.open .ham-button {
-  left: 284px;
-}
-#left-panel.open .ham-button span.icon-bar {
-  background-color: #e74c3c;
-}
-#left-panel.open .ham-button span.icon-bar:nth-child(2) {
-  opacity: 0;
-}
-#left-panel.open .ham-button span.icon-bar:nth-child(1) {
-  transform: rotate(45deg);
-  top: 7px;
-}
-#left-panel.open .ham-button span.icon-bar:nth-child(3) {
-  transform: rotate(-45deg);
-  top: -5px;
-}
-#left-panel.open .left-nav {
-  transform: translate(0px, 0px);
-}
 
 
 /*================= Clearfix =====================*/
