@@ -33,7 +33,7 @@ ol, ul {
 /*===================CSS STARTS HERE=========================*/
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
 *,
 before:,
 after: {
@@ -293,75 +293,12 @@ span a {
 }
 */
 /*================ CURTAIN MENU ================*/
-@-webkit-keyframes rotate1 {
-    from {-webkit-transform: rotate(0deg)}
-    to {-webkit-transform: rotate(180deg)}
-}
-@-webkit-keyframes rotate2 {
-    from {-webkit-transform: rotate(180deg)}
-    to {-webkit-transform: rotate(360deg)}
-}
 
-
-.menuIcon{
+.menuIcon {
   position: fixed;
   cursor: pointer;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
-  -webkit-animation-name: rotate2;
-  -webkit-animation-duration: 0.4s;
-  -webkit-transform: rotate(180deg);
-}
-
-.menuIcon span{
-  height: 5px;
-  width: 40px;
-  background-color: #FFF;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid black;
-}
-
-.bar-1,
-.bar-2,
-.bar-3,
-.menuIcon {
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-
-.newMenuIcon{
-    -webkit-animation-name: rotate1;
-    -webkit-animation-duration: 0.4s;
-    color: #FFF;
-    border: 0px solid white;
-}
-
-.newbar-1 {
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  border: 0px solid white;
-}
-
-.newbar-2{
-  -moz-transform: translate(-10px,0) scaleX(1.2);
-  transform: translate(-10px,0) scaleX(1.2);
-  -o-transform: translate(-10px,0) scaleX(1.2);
-  -webkit-transform: translate(-10px,0) scaleX(1.2);
-  border: 0px solid white;
-}
-
-.newbar-3 {
-  -moz-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  border: 0px solid white;
+  margin-top: 1%;
+  margin-left: 2%;
 }
 
 .curtain-content{
@@ -373,15 +310,24 @@ span a {
   height: 100%;
 }
 
-.curtain-content p {
+.curtain-content a {
+  text-decoration: none;
   color: #FFF;
-  padding-top: 35px;
-  border-top: 10px;
-  border-bottom: 10px;
-  font-size: 23px;
-  font-weight: bold;
+  border-top: 50px;
+  border-bottom: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: "Raleway", sans-serif;
 }
 
+.curtain-content a:hover {
+  color: #B2B200;
+}
+
+.curtain-content hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 /*====================== LOGIN / SIGNUP ===============*/
 .sign-log {
   position: relative;
@@ -399,7 +345,7 @@ span a {
                 1px 1px 0 #000;
 }
 
- @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+ 
 
 input {
   font: 16px/26px "Raleway", sans-serif; }

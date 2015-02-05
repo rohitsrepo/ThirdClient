@@ -4,56 +4,26 @@ $(document).ready(function() {
     });
 
    //DEAL WITH CURTAIN HERE
+   var fl = 1;
     $(".curtain-content").hide();
-    function toggleIcon(){
-      $(".menuIcon").toggleClass("newMenuIcon")
-      $(".bar-1").toggleClass("newbar-1");
-      $(".bar-2").toggleClass("newbar-2");
-      $(".bar-3").toggleClass("newbar-3"); 
-      $(".curtain-content").toggle(); 
-    }
-
     $(".menuIcon").click(function () {
-    toggleIcon();
-    if ($(".bar-1").hasClass("newbar-1")) {
-        $(".curtain-content").animate({marginLeft:0},400)
-    } else {
-        $(".curtain-contents").animate({marginLeft:-220},400)
+      fl = fl + 1;
+      if(fl%2==0){
+        $(".curtain-content").removeClass('fadeInRight');
+        $(".curtain-content").addClass('fadeInLeft');
+        $(".curtain-content").animate({marginLeft:0},400);
+        $(".menuIcon").animate({marginLeft:315},400);
+      }
+    else {
+        $(".curtain-content").removeClass('fadeInLeft');
+        $(".curtain-content").addClass('fadeIRight');
+        $(".curtain-contents").animate({marginLeft:-220},400);
+        $(".menuIcon").animate({marginLeft:10},400);
     }
+    $(".curtain-content").toggle();
     });
 
-    //INK EFFECT
-      var $ink, x, y, ink_diameter;
-  
-    $('.button-ink').on('mousedown', function (e) {
-    $(this).removeClass('raised');
     
-    // avoid adding multiple ink elements
-    if (!$(this).find('.ink').length) { // no ink element added yet
-      $(this).prepend('<span class="ink"></span>');
-      $ink = $(this).find('.ink');
-    } else { // ink element added
-      $ink = $(this).find('.ink');
-      $ink.removeClass('spill');
-    }
-    
-    ink_diameter = Math.max($(this).outerWidth(), $(this).outerHeight());
-    
-    // x and y coordinates for ink element
-    x = e.pageX - $(this).offset().left - (ink_diameter/2);
-    y = e.pageY - $(this).offset().top - (ink_diameter/2);
-    
-    $ink.css({
-      top      : y,
-      left     : x,
-      width    : ink_diameter,
-      height   : ink_diameter
-    }).addClass( 'spill' );
-    
-    $(this).addClass('raised');
-    
-  });
- 
  //DEAL WITH SIGNUP / LOGIN BOX HERE 
   $('.form-wrap').hide();
   var f=1;
@@ -87,33 +57,6 @@ $(document).ready(function() {
 
   });
 
-  //jQuery time
-var parent, ink, d, x, y;
-$(".artwork-link").click(function(e){
-  parent = $(this).parent();
-  //create .ink element if it doesn't exist
-  if(parent.find(".ink").length == 0)
-    parent.prepend("<span class='ink'></span>");
-    
-  ink = parent.find(".ink");
-  //incase of quick double clicks stop the previous animation
-  ink.removeClass("animate");
-  
-  //set size of .ink
-  if(!ink.height() && !ink.width())
-  {
-    //use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
-    d = Math.max(parent.outerWidth(), parent.outerHeight());
-    ink.css({height: d, width: d});
-  }
-  
-  //get click coordinates
-  //logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
-  x = e.pageX - parent.offset().left - ink.width()/2;
-  y = e.pageY - parent.offset().top - ink.height()/2;
-  
-  //set the position and add class .animate
-  ink.css({top: y+'px', left: x+'px'}).addClass("animate");
-})
+
 });
 
