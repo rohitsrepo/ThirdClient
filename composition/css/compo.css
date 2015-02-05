@@ -152,161 +152,65 @@ body {
 }
 
 /*=============== ART INFO BOX =====================*/
-.about_art {
-  position: relative;
-  clear: both;
+.about-painting {
   display: inline-block;
-  width: 25%;
-  margin: 0 auto;
+  float: right;
+  width: 30%;
 }
 
-.sticky-art {
-  object-fit: contain;
-  overflow: hidden;
+.about-painting img {
   width: 100%;
   height: auto;
 }
-/*.about_art p {
-  margin-right: 5px;
-  margin-left: 5px;
-}*/
 
 /*=================== THIRD VIEW ==================*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-.inter-heading {
-  position: relative;
-  font-size: 50px;
+
+.interpret-area {
+  width: 90%;
+  margin: 0 auto;
   margin-top: 20px;
-}
-
-.interpret {
-  padding-top: 80px;
   display: block;
 }
 
-#messages {
-  position: relative;
-  margin: 70px auto;
-  padding: 0;
-  width: 800px;
-  list-style: none; 
-  margin-right: 5%;
+.inter-heading {
+  font-size: 24px;
+  margin-bottom: .5em;
 }
 
-#messages li {
+.interprets {
+  /*margin-top: 15px;*/
+  width: 65%;
   float: left;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px dashed #c8c7b4; 
 }
 
-#messages li:nth-child(2n) .infos {
-  float: right;
-  margin-left: 20px; 
+.interprets hr {
+  margin: 20px 15px;
 }
 
-#messages li:nth-child(2n) .infos a {
-  -webkit-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  -moz-box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  box-shadow: 1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  left: inherit; 
+.interpreter {
+  margin-bottom: 10px;
 }
 
-#messages li:nth-child(2n) .content { 
-  border-width: 1px 3px 4px 4px; 
-}
-
-#messages li:nth-child(2n) .content:after,
-#messages li:nth-child(2n) .content:before {
-  right: -9px;
-  left: inherit;
-  -webkit-transform: rotate(41deg);
-  -moz-transform: rotate(41deg);
-  -o-transform: rotate(41deg);
-  transform: rotate(41deg); 
-}
-
-#messages .infos {
+.interpreter img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  position: relative;
-  float: left;
-  padding: 3px;
-  width: 130px;
-  height: 130px;
-  border: 5px solid #c8c7b4; 
-}
-
-#messages .infos a {
-  -webkit-border-radius: 17px;
-  -moz-border-radius: 17px;
-  -ms-border-radius: 17px;
-  -o-border-radius: 17px;
-  border-radius: 17px;
-  -webkit-box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  -moz-box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  box-shadow: -1px 1px 0 1px rgba(90, 81, 15, 0.2);
-  position: absolute;
-  width: 20px;
-  height: 22px;
-  background-color: #d5d2a8;
-  color: #fff;
-  text-decoration: none;
-  text-indent: -10000px;
-  font-size: 11px; 
-}
-
-#messages .infos a:hover {
-  padding: 0 10px 0 18px;
+  border: 3px solid #c8c7b4; 
+  height: 60px;
   width: auto;
-  border: none;
-  text-indent: 0;
-  opacity: 0.95; 
-}
-
-#messages img {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  width: 100%; 
-}
-
-#messages {
   float: left;
 }
- /*================ INTERPRETATIONS IN THIRD VIEW ================= */
 
-.content h3 {
-  font: 23px "Satisfy";
-  margin: 0;
-  padding: 0;
-  font-weight: normal; }
-
-.content p {
-  margin: 10px 0 0 0;
-  font-size: 15px;
-  line-height: 1.7em; }
-
-.content p a {
-  text-decoration: none;
-  background-color: #f7f3c5;
-  border-bottom: solid 1px #cfcebe;
-  color: #834202;
-  padding: 1px 4px; }
-
-
-.content b {
-  display: block;
-  color: #75280c;
-  font: italic normal 17px Georgia; }
-
+.interpreter div {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
 
 /*================= Clearfix =====================*/
 .clearfix:before,
