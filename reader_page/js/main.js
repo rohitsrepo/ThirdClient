@@ -12,13 +12,12 @@ $(document).ready(function() {
         $(".curtain-content").removeClass('fadeInRight');
         $(".curtain-content").addClass('fadeInLeft');
         $(".curtain-content").animate({marginLeft:0},400);
-        $(".menuIcon").animate({marginLeft:315},400);
+        $(".menuIcon").animate({marginLeft:335},400);
       }
     else {
         $(".curtain-content").removeClass('fadeInLeft');
-        $(".curtain-content").addClass('fadeIRight');
         $(".curtain-contents").animate({marginLeft:-220},400);
-        $(".menuIcon").animate({marginLeft:10},400);
+        $(".menuIcon").animate({marginLeft:20},400);
     }
     $(".curtain-content").toggle();
     });
