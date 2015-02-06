@@ -17,8 +17,7 @@ $(document).ready(function() {
         setTimeout(function(){$(".curtain-feature4").addClass('fadeInUpBig')},150);
         setTimeout(function(){$(".curtain-feature5").addClass('fadeInUpBig')},200);
         setTimeout(function(){$(".curtain-feature6").addClass('fadeInUpBig')},250);
-        $("header, .posts").removeClass("no-overlay");
-        setTimeout(function(){$("header, .posts").addClass("dark-overlay")},300);
+        setTimeout(function(){$(".overlayclass").addClass("overlay")},300);
       }
     else {
         $(".curtain-feature1").removeClass('fadeInUpBig');
@@ -30,8 +29,7 @@ $(document).ready(function() {
         $(".curtain-content").removeClass('fadeInLeft');
         $(".curtain-content").addClass('fadeOutLeft');
         $(".curtain-content").animate({marginLeft:-330},400);
-        setTimeout(function(){$("header, .posts").addClass("no-overlay")},300);
-        $("header, .posts").removeClass("dark-overlay");
+        $(".overlayclass").removeClass("overlay");
     }
   });
     
@@ -46,8 +44,7 @@ $(document).ready(function() {
           $(".curtain-content").removeClass('fadeInLeft');
           $(".curtain-content").addClass('fadeOutLeft');
           $(".curtain-contents").animate({marginLeft:-330},400);
-          $("header, .posts").removeClass("dark-overlay");
-          setTimeout(function(){$("header, .posts").addClass("no-overlay")},300);
+          $(".overlayclass").removeClass("overlay");
           fl = fl -1 ;
         }
     });
