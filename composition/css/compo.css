@@ -72,26 +72,8 @@ body {
   float: right;
  }
 
- /* ================== LOGIN / SIGNUP ===================*/
-#b1 {
-  position: relative;
-  float: right;
-  font-size: 20px;
-  margin-top: 15px;
-  margin-right: 15px;
-  color: black;
-}
-#b1 a{
-  text-decoration: none;
-  color: black;
-}
-#b1 #su:hover,#b1 #li:hover{
-  text-decoration color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
  /* ================== FIRST VIEW ================*/
+
 .banner {
   text-align: center;
   color: #000000;
@@ -129,6 +111,19 @@ body {
   padding: 10px 0 ;
 }
 
+.painting-toolbar img {
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: .5;
+  /*background: rgba(255, 255, 255, 0.3);*/
+}
+
+.painting-toolbar img:hover {
+  opacity: .95;
+}
+
 .painting-toolbar .social-icons{
   float: right;
   padding-right: 15%;
@@ -164,9 +159,6 @@ body {
 }
 
 /*=================== THIRD VIEW ==================*/
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
 
 .interpret-area {
   width: 90%;
