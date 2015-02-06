@@ -30,6 +30,17 @@ ol, ul {
 }
 
 /*=================== CSS STARTS HERE =========================*/
+@font-face {
+    font-family: taile;
+    src: url(fonts/TAILEB.TTF);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family: taile;
+    src: url(fonts/TAILE.TTF);
+    font-weight:400;
+}
 
 *,
 *:before,
@@ -48,7 +59,10 @@ html, body {
 }
 
 body {
-  font-family: "Varela Round";
+  font-family: "taile";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 /* ========= PRIMARY HEADER =========*/
@@ -82,6 +96,7 @@ body {
   margin: 0 auto;
   padding-top: 15%;
   padding-bottom: 15%;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .banner h1 {
@@ -97,6 +112,15 @@ body {
   position: absolute;
   bottom: 2.5%;
   right: 2%;
+}
+
+.primary-header footer h5 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.primary-header footer .uploader {
+  color: rgb(87, 173, 104);
+  cursor: pointer;
 }
 
 /* ================= HEADBAR IN SECOND VIEW ============== */
@@ -170,20 +194,22 @@ body {
 .inter-heading {
   font-size: 24px;
   margin-bottom: .5em;
+  color: rgba(0, 0, 0, .6);
 }
 
 .interprets {
-  /*margin-top: 15px;*/
   width: 65%;
   float: left;
 }
 
 .interprets hr {
   margin: 20px 15px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .interpreter {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .interpreter img {
@@ -193,7 +219,7 @@ body {
   -o-border-radius: 50%;
   border-radius: 50%;
   border: 3px solid #c8c7b4; 
-  height: 60px;
+  height: 50px;
   width: auto;
   float: left;
 }
@@ -202,6 +228,21 @@ body {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+.interpreter h3 {
+  color: rgb(87, 173, 104);
+}
+
+.interpreter h5 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.interpret-content {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  text-decoration: none solid rgba(0, 0, 0, 0.8);
 }
 
 /*================= Clearfix =====================*/
