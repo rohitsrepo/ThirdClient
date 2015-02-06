@@ -203,8 +203,10 @@ body {
 }
 
 .interprets hr {
-  margin: 20px 15px;
-  color: rgba(0, 0, 0, 0.8);
+  margin: 20px auto;
+  width: 90%;
+  display: block;
+  opacity: 0.3;
 }
 
 .interpreter {
@@ -243,6 +245,30 @@ body {
   line-height: 25px;
   letter-spacing: 0.1px;
   text-decoration: none solid rgba(0, 0, 0, 0.8);
+}
+
+.interpret-footer {
+  margin-top: 10px;
+}
+
+.interpret-footer .icon {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 5px 3px;
+}
+
+.interpret-footer .icon:hover {
+  opacity: 1;
+}
+
+.interpret-footer .icon-left{
+  float: left;
+}
+
+.interpret-footer .icon-right{
+  float: right;
 }
 
 /*================= Clearfix =====================*/
