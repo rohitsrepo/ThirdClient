@@ -180,6 +180,50 @@ body {
 .about-painting img {
   width: 100%;
   height: auto;
+  margin-bottom: 15px;
+}
+
+.about-painting li {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about-painting .details {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.about-painting a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(87, 173, 104);
+}
+
+.about-painting th,
+.about-painting td {
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+
+.about-painting th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+
+.about-painting td {
+  width: 40%;
+  /*border-bottom: 1px solid #dfe2e5;*/
+  border: 0;
+  padding-top: 21px;
 }
 
 /*=================== THIRD VIEW ==================*/
@@ -187,7 +231,7 @@ body {
 .interpret-area {
   width: 90%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   display: block;
 }
 
