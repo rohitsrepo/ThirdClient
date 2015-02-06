@@ -5,23 +5,35 @@ $(document).ready(function() {
 
    //DEAL WITH CURTAIN HERE
    var fl = 1;
-    //$(".curtain-content").hide();
     $(".menuIcon").click(function () {
       fl = fl + 1;
       if(fl%2==0){
         $(".curtain-content").removeClass('fadeOutLeft');
         $(".curtain-content").addClass('fadeInLeft');
         $(".curtain-content").animate({marginLeft:0},400);
+        $(".curtain-features").addClass('fadeInUpBig');
+        $("header, .posts").addClass("dark-overlay");
       }
     else {
+        $(".curtain-features").removeClass('fadeInUpBig');
         $(".curtain-content").removeClass('fadeInLeft');
         $(".curtain-content").addClass('fadeOutLeft');
-        $(".curtain-contents").animate({marginLeft:-330},400);
+        $(".curtain-content").animate({marginLeft:-330},400);
+        $("header, .posts").removeClass("dark-overlay");
     }
-    //$(".curtain-content").toggle();
+  });
+    
+    $('.posts, .banner').click(function() {
+        if($(".curtain-content").hasClass("fadeInLeft")){
+          $(".curtain-features").removeClass('fadeInUpBig');
+          $(".curtain-content").removeClass('fadeInLeft');
+          $(".curtain-content").addClass('fadeOutLeft');
+          $(".curtain-contents").animate({marginLeft:-330},400);
+          $("header, .posts").removeClass("dark-overlay");
+          fl = fl -1 ;
+        }
     });
 
-    
  //DEAL WITH SIGNUP / LOGIN BOX HERE 
   $('.form-wrap').hide();
   var f=1;
