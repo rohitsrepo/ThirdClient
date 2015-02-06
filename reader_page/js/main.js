@@ -11,25 +11,43 @@ $(document).ready(function() {
         $(".curtain-content").removeClass('fadeOutLeft');
         $(".curtain-content").addClass('fadeInLeft');
         $(".curtain-content").animate({marginLeft:0},400);
-        $(".curtain-features").addClass('fadeInUpBig');
-        $("header, .posts").addClass("dark-overlay");
+        $(".curtain-feature1").addClass('fadeInUpBig');
+        setTimeout(function(){$(".curtain-feature2").addClass('fadeInUpBig')},50);
+        setTimeout(function(){$(".curtain-feature3").addClass('fadeInUpBig')},100);
+        setTimeout(function(){$(".curtain-feature4").addClass('fadeInUpBig')},150);
+        setTimeout(function(){$(".curtain-feature5").addClass('fadeInUpBig')},200);
+        setTimeout(function(){$(".curtain-feature6").addClass('fadeInUpBig')},250);
+        $("header, .posts").removeClass("no-overlay");
+        setTimeout(function(){$("header, .posts").addClass("dark-overlay")},300);
       }
     else {
-        $(".curtain-features").removeClass('fadeInUpBig');
+        $(".curtain-feature1").removeClass('fadeInUpBig');
+        $(".curtain-feature2").removeClass('fadeInUpBig');
+        $(".curtain-feature3").removeClass('fadeInUpBig');
+        $(".curtain-feature4").removeClass('fadeInUpBig');
+        $(".curtain-feature5").removeClass('fadeInUpBig');
+        $(".curtain-feature6").removeClass('fadeInUpBig');
         $(".curtain-content").removeClass('fadeInLeft');
         $(".curtain-content").addClass('fadeOutLeft');
         $(".curtain-content").animate({marginLeft:-330},400);
+        setTimeout(function(){$("header, .posts").addClass("no-overlay")},300);
         $("header, .posts").removeClass("dark-overlay");
     }
   });
     
     $('.posts, .banner').click(function() {
         if($(".curtain-content").hasClass("fadeInLeft")){
-          $(".curtain-features").removeClass('fadeInUpBig');
+          $(".curtain-feature1").removeClass('fadeInUpBig');
+          $(".curtain-feature2").removeClass('fadeInUpBig');
+          $(".curtain-feature3").removeClass('fadeInUpBig');
+          $(".curtain-feature4").removeClass('fadeInUpBig');
+          $(".curtain-feature5").removeClass('fadeInUpBig');
+          $(".curtain-feature6").removeClass('fadeInUpBig');
           $(".curtain-content").removeClass('fadeInLeft');
           $(".curtain-content").addClass('fadeOutLeft');
           $(".curtain-contents").animate({marginLeft:-330},400);
           $("header, .posts").removeClass("dark-overlay");
+          setTimeout(function(){$("header, .posts").addClass("no-overlay")},300);
           fl = fl -1 ;
         }
     });

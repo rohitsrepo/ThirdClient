@@ -54,7 +54,17 @@ a {
  
 .dark-overlay {
   opacity: 0.7;
+  transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -webkit-transition: opacity .35s ease-in-out;
   filter: opacity(0.7) grayscale(50%);
+}
+.no-overlay {
+  
+  transition:  visibility 0s .25s opacity .25s ease-out-in;
+  -moz-transition:  visibility 0s .25s opacity .25s ease-out-in;
+  -webkit-transition: visibility 0s .25s opacity .25s ease-out-in;
+
 }
 /*=================== HEAD BANNER =========================*/
 
