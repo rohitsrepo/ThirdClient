@@ -47,29 +47,21 @@ $(document).ready(function() {
             $(".curtain-right").removeClass('animated animated fadeOutRight');
             $(".curtain-right").addClass('animated fadeInRight');
             $(".curtain-right").animate({marginRight:0}, 400);
-            $(".curtain-right .link1").addClass('animated fadeInUpBig');
-            setTimeout(function(){$(".curtain-right .link2").addClass('animated fadeInUpBig')}, 50);
-            setTimeout(function(){$(".curtain-right .link3").addClass('animated fadeInUpBig')}, 90);
-            setTimeout(function(){$(".curtain-right .link4").addClass('animated fadeInUpBig')}, 130);
-            setTimeout(function(){$(".curtain-right .link5").addClass('animated fadeInUpBig')}, 170);
-            setTimeout(function(){$(".curtain-right .link6").addClass('animated fadeInUpBig')}, 210);
+            $(".auth-user").removeClass("animated fadeInRight");
+            $(".auth-user").addClass("animated fadeOutLeft");
             setTimeout(function(){$(".curtain-overlay-placeholder").addClass("curtain-overlay")}, 250);
         },
 
          removeCurtain: function () {
-            $(".curtain-right .link1").removeClass('animated fadeInUpBig');
-            $(".curtain-right .link2").removeClass('animated fadeInUpBig');
-            $(".curtain-right .link3").removeClass('animated fadeInUpBig');
-            $(".curtain-right .link4").removeClass('animated fadeInUpBig');
-            $(".curtain-right .link5").removeClass('animated fadeInUpBig');
-            $(".curtain-right .link6").removeClass('animated fadeInUpBig');
             $(".curtain-right").removeClass('animated fadeInRight');
             $(".curtain-right").animate({marginRight:-500}, 300);
+            $(".auth-user").removeClass("animated fadeOutLeft");
+            $(".auth-user").addClass("animated fadeInRight");
             $(".curtain-overlay-placeholder").removeClass("curtain-overlay");
         },
 
          isCurtainActive: function () {
-            if($(".curtain-right .link2").hasClass("fadeInUpBig")){
+            if($(".curtain-right").hasClass("fadeInRight")){
                 return true;
             }
             return false;
