@@ -253,30 +253,33 @@ a {
   *zoom: 1;
 }
 
-/*================ CURTAIN MENU ================*/
+/*================ CURTAIN MENU - LEFT ================*/
 
 .logo {
   position: fixed;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 20px;
+  top: 20px;
+  left: 20px;
   z-index: 100;
   width: 50px;
   height: auto;
 }
 
-.curtain-content{
+.curtain-left {
   position: fixed;
   width: 22%;
   margin-left: -23%;
-  padding: 70px 10px;
-  background-color: #1c2023;
   z-index: 99;
   height: 100%;
+  background-color: #1c2023;
   font-family: "taile";
 }
 
-.curtain-content a {
+.curtain-left .content {
+  padding: 70px 10px;
+}
+
+.curtain-left .content a {
   display: block;
   text-decoration: none;
   cursor: pointer;
@@ -286,6 +289,47 @@ a {
   color: #B1B1B1;
 }
 
-.curtain-content a:hover{
+.curtain-left .content a:hover{
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/*================ CURTAIN MENU - RIGHT ================*/
+
+.auth-user {
+  position: fixed;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 50px;
+  height: auto;
+}
+
+.curtain-right {
+  position: fixed;
+  right: 0;
+  width: 22%;
+  margin-right: -23%;
+  z-index: 99;
+  height: 100%;
+  background-color: #1c2023;
+  font-family: "taile";
+}
+
+.curtain-right .content {
+  padding: 70px 10px;
+}
+
+.curtain-right .content a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 50px 0;
+  margin-left: 20px;
+  color: #B1B1B1;
+}
+
+.curtain-right .content a:hover{
   color: rgba(255, 255, 255, 0.95);
 }
