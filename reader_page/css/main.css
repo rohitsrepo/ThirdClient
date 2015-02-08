@@ -32,9 +32,6 @@ ol, ul {
 
 /*===================CSS STARTS HERE=========================*/
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
-
 @font-face {
     font-family: taile;
     src: url(fonts/TAILEB.TTF);
@@ -61,18 +58,21 @@ html, body {
   margin: 0;
   font-family: "Varela Round";
   font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 a {
   text-decoration: none;
 }
 
-.overlay {
+.curtain-overlay {
   position: fixed;
   height: 100%;
   width: 100%;
   background: rgba(0,0,0,0.3);
-  z-index: 70;
+  z-index: 98;
   transition: background .40s ease;
   -moz-transition: background .40s ease;
   -webkit-transition: background .40s ease;
@@ -133,7 +133,7 @@ a {
   width: 80%;
   margin: 5% auto;
   display: block;
-  box-shadow: 10px 10px 2px 0px #C9C6C6;
+  box-shadow: 10px 10px 30px 0px #C9C6C6;
   font-family: "taile";
   overflow: hidden;
 }
@@ -153,6 +153,7 @@ a {
   width: 45%;
   vertical-align:top;
   padding-right: .5em;
+  margin-top: 10px;
 }
 
 .description-header {
@@ -254,43 +255,37 @@ a {
 
 /*================ CURTAIN MENU ================*/
 
-.menuIcon {
+.logo {
   position: fixed;
   cursor: pointer;
-  margin-top: 1%;
+  margin-top: 20px;
   margin-left: 20px;
   z-index: 100;
+  width: 50px;
+  height: auto;
 }
 
 .curtain-content{
   position: fixed;
-  width: 300px;
+  width: 22%;
+  margin-left: -23%;
   padding: 70px 10px;
-  background-color: #363a3d;
+  background-color: #1c2023;
   z-index: 99;
   height: 100%;
-  margin-left: -330px;
+  font-family: "taile";
 }
 
 .curtain-content a {
+  display: block;
   text-decoration: none;
-  color: #FFF;
-  border-top: 50px;
-  border-bottom: 50px;
-  font-size: 30px;
-  font-weight: 400;
-  font-style: "Raleway", sans-serif;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 50px 0;
+  margin-left: 20px;
+  color: #B1B1B1;
 }
 
-.curtain-content a:hover {
-  color: #B2B200;
-}
-
-.curtain-content hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#first {
-  padding-top: 80px;
+.curtain-content a:hover{
+  color: rgba(255, 255, 255, 0.95);
 }
